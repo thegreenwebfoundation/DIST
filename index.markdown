@@ -3,6 +3,4 @@ title: DIST
 layout: home
 ---
 
-This is the homepage, edited from Siteleaf
-
-Hello world!
+# Digital Impacts Schema and Taxonomy
