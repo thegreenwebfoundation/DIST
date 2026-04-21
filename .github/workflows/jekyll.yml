@@ -3,8 +3,6 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches: [main]
-    paths:
-      - 'site/**'
 
 permissions:
   contents: read
@@ -21,7 +19,7 @@ jobs:
 
       - uses: actions/jekyll-build-pages@v1
         with:
-          source: ./site
+          source: ./
           destination: ./_site
 
       - uses: actions/upload-pages-artifact@v4
