@@ -1,7 +1,7 @@
 # DIST
 Digital Impacts Schema &amp; Taxonomy
 
-This repository holds the website for the Digital Impacts Schema &amp; Taxonomy, hosted on github pages and available at [https://dist.greenweb.org](https://dist.greenweb.org).
+This repository holds the website (and schema) for the Digital Impacts Schema &amp; Taxonomy, hosted on github pages and available at [https://dist.greenweb.org](https://dist.greenweb.org).
 
 It's created using [Jekyll](https://jekyllrb.com/) and editable using [SiteLeaf](https://www.siteleaf.com/).
 
