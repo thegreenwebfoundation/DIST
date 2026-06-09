@@ -15,7 +15,7 @@ layout: home
     </div>
     <div>
         <figure class="m-4 text-center">
-         <img src="/assets/images/DIST-taxonomy-v001-1500px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the DIST default taxonomy" />
+         <img src="/assets/images/DIST-taxonomy-v001-400px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the DIST default taxonomy" />
             <figcaption class="text-charcoal-600 italic pt-2">A screenshot of the default taxonomy.</figcaption>
         </figure>
     </div>
@@ -32,7 +32,10 @@ layout: home
     <div class=""><p>Designed to become the definitive data format for sharing quantified tech impacts.</p>
     </div>
     <div>
-        <p class="mt-12 p-4 text-2xl border-t-2 border-b-2">Coming soon</p>
+        <figure class="m-4 text-center">
+        <img src="/assets/images/DIST-schema-v001-400px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the emerging DIST schema">
+        <figcaption class="text-charcoal-600 italic pt-2">A screenshot of emerging DIST schema.</figcaption>
+        </figure>
     </div>
     <div class=""><a href="/schema" class="font-bold">Visit schema overview →</a></div>
 </div>

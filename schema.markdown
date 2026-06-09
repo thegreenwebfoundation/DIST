@@ -3,12 +3,31 @@ title: Schema
 date: 2026-05-06 10:15:00 Z
 ---
 
+
 Designed to be the definitive data format for sharing quantified tech impacts. Crucially, with links to the methodology used to calculate the data reported.
 
-Key principle:
-> "An impact can only come into DIST's schema when it has a quantifiable metric against an agreed methodology."
+<div>
+<figure class="m-4 text-center">
+<img src="/assets/images/DIST-schema-v001-400px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the emerging DIST schema">
+<figcaption class="text-charcoal-600 italic pt-2">A screenshot of emerging DIST schema.</figcaption>
+</figure>
+</div>
+     
 
-The [DIST taxonomy](/taxonomy) will be broader and aspirational and educational. The schema is metrics-focused: structured reporting fields are only created for impacts that have an established, quantifiable way of being measured. This keeps the schema rigorous, consistent and defensible.
+
+
+## Coming soon
+
+To track progress, you can [view the schema inside the repo](https://github.com/thegreenwebfoundation/DIST/tree/main/schema/dist) as we work on it.
+
+To get involved in the shaping of the vision and implementation of this section of DIST, take a look at the [issues we are working on in gtihub](https://github.com/thegreenwebfoundation/DIST/issues).
+
+## Background info
+
+Key principle:
+> An impact can only come into DIST's schema when it has a quantifiable metric against an agreed methodology.
+
+The schema is metrics-focused: structured reporting fields are only created for impacts that have an established, quantifiable way of being measured. This keeps the schema rigorous, consistent and defensible. The [DIST taxonomy](/taxonomy) will be broader and aspirational and educational. 
 
 ## More on what the schema is and what it isn't:
 
