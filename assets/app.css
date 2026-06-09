@@ -275,13 +275,21 @@
         animation: fadein 0.5s, fadeout 0.5s 2.5s;
     }
 
-    .info-box {
+    div[class$="-box"] { 
       @apply border;
       @apply rounded-xl;
-      @apply border-green;
-      @apply bg-green-100;
       @apply p-4;
     }
+
+    .info-box {
+      @apply border-green;
+      @apply bg-green-100;
+    }
+
+    .warning-box {
+      @apply border-orange;
+      @apply bg-orange-100;
+    }    
 
 }
 

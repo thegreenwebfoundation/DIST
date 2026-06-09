@@ -4,20 +4,29 @@ date: 2026-05-06 10:15:00 Z
 layout: taxonomy
 ---
 
-<div class="prose">
-<p>The taxonomy part of Digital Impacts Schema and Taxonomy (DIST) is a standardised categorisation system that can be applied across multiple impact dimensions. It's a common approach for structuring impact estimates data, enabling comparison across different organisations and applications.</p>
-<p>To apply the taxonomy in practice, use DIST's <a href="/methodologies">methodologies map</a> and <a href="/schema">schema</a> to produce and share impact estimates.</p>
+<div class="sm:flex">
+  <div class="prose sm:w-1/2">
+  <p>The taxonomy part of Digital Impacts Schema and Taxonomy (DIST) is a standardised categorisation system that can be applied across multiple environment impact dimensions. It's a common approach for structuring impact estimates data, enabling comparison across different organisations and applications.</p>
+  <p>The taxonomy can be used as a stand-alone tool to support discussion or workshops for exploring the full specturm of impacts across the whole life-cycle of digital products.</p>
+  <p>It can also be used in conjunction with DIST's <a href="/methodologies">methodologies map</a> and <a href="/schema">schema</a> to produce and share detailed impact estimates.</p>
+  </div>
+  <div class="sm:w-1/2 text-center">
+    <figure class="m-4">
+      <img src="/assets/images/DIST-taxonomy-v001-400px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the DIST default taxonomy">
+      <figcaption class="text-charcoal-600 italic pt-2">A screenshot of the default taxonomy.</figcaption>
+    </figure>
+  </div>
 </div>
 
 <div class="mt-10 mb-6">
-  {% include DIST/taxonomy-overview.html title=true %}
+  {% include DIST/taxonomy-categories-overview.html title=true %}
 </div>
 
 
 <div class="mt-6 mb-10">
-  <h2 class="text-2xl">Impact dimensions</h2>
+  <h2 class="text-2xl">Impact Dimensions</h2>
   <div class="prose mt-6">
-    <p>DIST's default taxonomy is extensible so it can be applied to multiple environmental impact dimensions. We welcome contributions to improve all aspects of this work - see <a href="get-involved/">get involved</a>.</p>
+    <p>DIST's default taxonomy is extensible so it can be applied to multiple environmental impact dimensions. We welcome contributions to improve all aspects of this work - see <a href="/get-involved">get involved</a>.</p>
     <p>Use the buttons below to toggle between the default taxonomy and versions tailored to specific  impact dimensions the DIST community have worked on.</p>
   </div>
 </div>
@@ -49,10 +58,17 @@ layout: taxonomy
   {% endtab %}
 
   {% tab log Water %}
-  <div class="my-8 info-box">
+  <div class="my-8 warning-box">
     <p>The DIST community are currently working to map the default taxonomy to water impacts.</p>
     <p>If you would like to contribute, please see the <a href="get-involved/">get involved</a> page.</p>
   </div>
   {% endtab %}
+
+  {% tab log Health %}
+  <div class="my-8 warning-box">
+    <p>The DIST community are currently working to map the default taxonomy to human health impacts.</p>
+    <p>If you would like to contribute, please see the <a href="get-involved/">get involved</a> page.</p>
+  </div>
+  {% endtab %}  
 {% endtabs %}
 </div>

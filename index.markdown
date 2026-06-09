@@ -8,16 +8,36 @@ layout: home
 <p class="text-med">Digital Impacts Schema and Taxonomy (DIST) provides a suite of open-source tools enabling any organisation to report on their digital technology estate's environmental impacts in a consistent way that others can understand.</p>
 </div>
 
-<div class="grid gap-x-10 gap-y-6 sm:grid-cols-3 sm:grid-rows-[repeat(3,minmax(0,auto))] sm:grid-flow-col sm:auto-rows-auto mt-10 mb-20">
+<div class="grid gap-x-10 gap-y-6 sm:grid-cols-3 sm:grid-rows-[repeat(4,minmax(0,auto))] sm:grid-flow-col sm:auto-rows-auto mt-10 mb-20">
     <div class="..."><h2 class="mb-0 text-2xl border-t-0">Taxonomy</h2></div>
-    <div class=""><p>Standardised categorisation system across multiple impact dimensions for structuring impacts and ensuring nothing important is missed.</p></div>
-    <div class=""><a href="/taxonomy" class="font-bold">Taxonomy →</a></div>
+    <div class="">
+        <p>Standardised categorisation system across multiple impact dimensions for structuring impacts and ensuring nothing important is missed.</p>
+    </div>
+    <div>
+        <figure class="m-4 text-center">
+         <img src="/assets/images/DIST-taxonomy-v001-400px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the DIST default taxonomy" />
+            <figcaption class="text-charcoal-600 italic pt-2">A screenshot of the default taxonomy.</figcaption>
+        </figure>
+    </div>
+    <div class=""><a href="/taxonomy" class="font-bold">Visit taxonomy overview →</a></div>
     <div class=""><h2 class="mb-0 text-2xl border-t-0">Methodologies</h2></div>
-    <div class=""><p>Curated list of measurement methodologies to support data production for all categories of the taxonomy.</p></div>
-    <div class=""><a href="/methodologies" class="font-bold">Methodologies →</a></div>
+    <div class="">
+        <p>Curated list of measurement methodologies to support data production for all categories of the taxonomy.</p>
+    </div>
+    <div>
+        <p class="mt-12 p-4 text-2xl border-t-2 border-b-2">Coming soon</p>
+    </div>
+    <div class=""><a href="/methodologies" class="font-bold">Vist methodologies overview →</a></div>
     <div class=""><h2 class="mb-0 text-2xl border-t-0">Schema</h2></div>
-    <div class=""><p>Designed to become the definitive data format for sharing quantified tech impacts.</p></div>
-    <div class=""><a href="/schema" class="font-bold">Schema →</a></div>
+    <div class=""><p>Designed to become the definitive data format for sharing quantified tech impacts.</p>
+    </div>
+    <div>
+        <figure class="m-4 text-center">
+        <img src="/assets/images/DIST-schema-v001-400px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the emerging DIST schema">
+        <figcaption class="text-charcoal-600 italic pt-2">A screenshot of emerging DIST schema.</figcaption>
+        </figure>
+    </div>
+    <div class=""><a href="/schema" class="font-bold">Visit schema overview →</a></div>
 </div>
 
 <div class="full-width bg-charcoal-100">
