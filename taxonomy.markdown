@@ -12,7 +12,7 @@ layout: taxonomy
   </div>
   <div class="sm:w-1/2 text-center">
     <figure class="m-4">
-      <img src="/assets/images/DIST-taxonomy-v001-1500px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the DIST default taxonomy">
+      <img src="/assets/images/DIST-taxonomy-v001-400px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the DIST default taxonomy">
       <figcaption class="text-charcoal-600 italic pt-2">A screenshot of the default taxonomy.</figcaption>
     </figure>
   </div>
