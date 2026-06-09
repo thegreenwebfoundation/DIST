@@ -6,7 +6,7 @@ layout: taxonomy
 
 <div class="prose">
 <p>The taxonomy part of Digital Impacts Schema and Taxonomy (DIST) is a standardised categorisation system that can be applied across multiple impact dimensions. It's a common approach for structuring impact estimates data, enabling comparison across different organisations and applications.</p>
-<p>To apply the taxonomy in practice, use DIST's <a href="/methodologies/">methodologies map</a> and <a href="/schema/">schema</a> to produce and share impact estimates.</p>
+<p>To apply the taxonomy in practice, use DIST's <a href="/methodologies">methodologies map</a> and <a href="/schema">schema</a> to produce and share impact estimates.</p>
 </div>
 
 <div class="mt-10 mb-6">

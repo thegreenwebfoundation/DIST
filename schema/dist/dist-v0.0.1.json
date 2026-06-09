@@ -7,7 +7,7 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "enum": ["0.1.0"]
+      "enum": ["0.0.1"]
     },
     "organisation": {
       "type": "object",
@@ -20,6 +20,11 @@
         "description": {
           "type": "string",
           "description": "Brief description of the organisation and its technology estate."
+        },
+        "open_corporates_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Open Corporates URL for the reporting organisation, providing a verifiable corporate identity (e.g. 'https://opencorporates.com/companies/gb/12345678')."
         },
         "country": {
           "type": "string",
@@ -53,14 +58,9 @@
           },
           "required": ["from", "to"]
         },
-        "reporting_scope": {
-          "type": "string",
-          "enum": ["own_operations", "service_provided", "both"],
-          "description": "Whether this report covers the organisation's own operations, the impacts of services provided to customers, or both. Relevant for vendor/supplier transparency."
-        },
         "verification": {
           "type": "string",
-          "enum": ["self_reported", "peer_reviewed", "independently_verified"],
+          "enum": ["self reported", "peer reviewed", "independently verified"],
           "description": "Level of verification applied to this report."
         },
         "verifier": {
@@ -104,8 +104,8 @@
       "properties": {
         "dimension": {
           "type": "string",
-          "enum": ["carbon", "energy", "water", "materials", "land_use", "health"],
-          "description": "The DIST taxonomy dimension this impact belongs to."
+          "enum": ["carbon"],
+          "description": "The DIST taxonomy dimension this impact belongs to. Further dimensions will be added once methodologies agreed - potentially energy, water, materials, land use and health"
         },
         "category": {
           "type": "string",
@@ -157,9 +157,7 @@
           "description": "Machine-readable methodology identifier. Use a DIST published methodology ID where available (e.g. 'dist:carbon:ccf', 'dist:carbon:ghgp-ict'). Can reference external methodology registries. Helps identify whether a recognised methodology was used.",
           "examples": [
             "dist:carbon:ghgp-ict",
-            "dist:carbon:ccf",
-            "dist:energy:direct-metering",
-            "dist:water:wue-estimate"
+            "dist:carbon:ccf"          
           ]
         },
         "confidence": {
