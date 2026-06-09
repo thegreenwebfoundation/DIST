@@ -3,7 +3,6 @@ title: Schema
 date: 2026-05-06 10:15:00 Z
 ---
 
-
 Designed to be the definitive data format for sharing quantified tech impacts. Crucially, with links to the methodology used to calculate the data reported.
 
 <div>
