@@ -7,7 +7,7 @@
   <table>
     <thead>
       <tr>
-        <th>Property</th><th>Type</th><th>Required</th><th>Default</th><th>Description</th>
+        <th>Property</th><th>Type</th><th>Required</th><th>Description</th>
       </tr>
     </thead>
     <tbody>
@@ -21,13 +21,24 @@
           {% endif %}
         </td>
         <td>{% if prop.required %}✓{% endif %}</td>
-        <td>{% if prop.default != nil %}<code>{{ prop.default }}</code>{% endif %}</td>
         <td>
-          {{ prop.description }}
+          {% if prop.description and not ((prop.type =='object' and prop.properties) or (prop.type == 'array' and prop.items.properties)) %}
+            {{ prop.description }}
+            {% if prop.enum or prop.default %}
+              <br />
+            {% endif %}
+          {% endif %}
 
           {% if prop.enum %}
-            <br>One of:
+            One of:
             {% for v in prop.enum %}<code>{{ v }}</code>{% unless forloop.last %}, {% endunless %}{% endfor %}
+            {% if prop.default %}
+              <br />
+            {% endif %}
+          {% endif %}
+
+          {% if prop.default %}
+            Default: <code>{{ prop.default }}</code>
           {% endif %}
 
           {% if prop.type == 'object' and prop.properties %}

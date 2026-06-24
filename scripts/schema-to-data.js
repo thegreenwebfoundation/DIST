@@ -21,9 +21,7 @@ function processProperty(name, prop, required = []) {
     variants: null,
   };
 
-  if (prop.type && prop.type !== 'object') {
-    return { ...base, type: prop.type };
-  }
+  const combiner = ['anyOf', 'oneOf', 'allOf'].find(k => prop[k]);
 
   if (prop.type === 'object' || prop.properties) {
     return {
@@ -31,9 +29,8 @@ function processProperty(name, prop, required = []) {
       type: 'object',
       properties: processSchema(prop),
     };
-  }
 
-  if (prop.type === 'array' && prop.items) {
+  } else if (prop.type === 'array' && prop.items) {
     const items = prop.items;
     return {
       ...base,
@@ -42,10 +39,8 @@ function processProperty(name, prop, required = []) {
         ? { type: 'object', properties: processSchema(items) }
         : { type: items.type || 'any' },
     };
-  }
 
-  const combiner = ['anyOf', 'oneOf', 'allOf'].find(k => prop[k]);
-  if (combiner) {
+  } else if (combiner) {
     return {
       ...base,
       type: combiner,
@@ -56,9 +51,14 @@ function processProperty(name, prop, required = []) {
         properties: variant.properties ? processSchema(variant) : null,
       })),
     };
-  }
 
-  return { ...base, type: 'any' };
+  } else if (prop.type && prop.type != 'object') {
+    return { ...base, type: prop.type };
+
+  } else {
+    return { ...base, type: 'any' };
+
+  }
 }
 
 function processSchema(schema) {
