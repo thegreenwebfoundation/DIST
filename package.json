@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "schema-to-data": "node scripts/schema-to-data.js schema/dist/dist-v0.0.1.json _data/generated/schema.json"
+    "deploy": "./scripts/build.sh && wrangler deploy",
+    "preview": "./scripts/build.sh && wrangler dev"
+
   },
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^15.4.0",

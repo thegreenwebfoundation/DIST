@@ -28,9 +28,7 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
-      - run: npm run schema-to-data
-
-      - run: bundle exec jekyll build
+      - run: bundle exec ./scripts/build.sh
 
       - uses: actions/upload-pages-artifact@v4
 
