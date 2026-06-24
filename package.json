@@ -2,7 +2,6 @@
   "scripts": {
     "deploy": "./scripts/build.sh && wrangler deploy",
     "preview": "./scripts/build.sh && wrangler dev"
-
   },
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^15.4.0",
@@ -11,5 +10,8 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.19",
     "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "wrangler": "^4.104.0"
   }
 }
