@@ -3,7 +3,7 @@ title: Schema
 date: 2026-05-06 10:15:00 Z
 ---
 
-Designed to be the definitive data format for sharing quantified tech impacts. Schema files can be made available to others using [carbon.txt](https://carbontxt.org/).
+Designed to be the definitive data format for sharing quantified tech impacts. DIST files can be made available to others using [carbon.txt](https://carbontxt.org/).
 
 <div>
 <figure class="m-4 text-center">
@@ -16,7 +16,7 @@ Designed to be the definitive data format for sharing quantified tech impacts. S
 
 To track progress, you can [view the schema inside the repo](https://github.com/thegreenwebfoundation/DIST/tree/main/schema/dist) as we work on it.
 
-To get involved in the shaping of the vision and implementation of this section of DIST, take a look at the [issues we are working on in gtihub](https://github.com/thegreenwebfoundation/DIST/issues).
+To get involved in the shaping of the vision and implementation of this section of DIST, take a look at the [issues we are working on in github](https://github.com/thegreenwebfoundation/DIST/issues).
 
 ## Background info
 
