@@ -6,8 +6,11 @@
     "enabled": true
   },
   "assets": {
-    "directory": "_site"
+    "directory": "_site",
+    "binding": "ASSETS",
+    "run_worker_first": true,
   },
+  "main": "functions/main.js",
   "compatibility_flags": [
     "nodejs_compat"
   ]
