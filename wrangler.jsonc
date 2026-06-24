@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "dist",
+  "name": "dist-staging",
   "compatibility_date": "2026-06-24",
   "observability": {
     "enabled": true
