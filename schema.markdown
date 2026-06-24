@@ -34,11 +34,11 @@ The schema is metrics-focused and aligns with the [DIST taxonomy](/taxonomy). Mo
 
 ### This IS NOT:
 
-* A prescriptive methodology - the schema defines what to report, not how to calculate it; recommended methodologies will be available through the [DIST methodology map](/methodologies) but are not required. 
+* A prescriptive methodology - the schema defines what to report, not how to calculate it; recommended methodologies will be available through the [DIST methodology map](/methodologies) but are not required.
 
 * A certification or compliance framework - though it should be useful for those who need to comply with regulations like CSRD.
 
-* A commercial product - it is open source, dual-licensed for open adoption and ISO standardisation but it is commercial product friendly - it can be used in commercial products and services. 
+* A commercial product - it is open source, dual-licensed for open adoption and ISO standardisation but it is commercial product friendly - it can be used in commercial products and services.
 
 ## Use cases: what will people actually do with this?
 
@@ -59,3 +59,7 @@ Benchmark and compare. Because the schema enforces a consistent structure, repor
 
 **Build tools and services.** Developers build calculators, dashboards, benchmarking platforms, and analysis tools on top of the schema. Because the data structure is open and consistent, tooling built for one organisation works for any organisation. The schema becomes infrastructure that an ecosystem of tools plugs into.
 Teach and learn. Educators, training providers, and professional bodies use the taxonomy as a teaching framework for technology sustainability that goes beyond carbon. The dimensions provide a structured syllabus for understanding the full breadth of technology's impacts.
+
+
+{% include schema-table.html schema=site.data.generated.schema %}
+
