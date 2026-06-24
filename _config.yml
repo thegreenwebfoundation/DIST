@@ -22,12 +22,12 @@ tailwind:
   input: assets/app.css
   minify: true
 exclude:
-  - functions/
-  - node_modules/
-  - scripts/
-  - schema/
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - package-lock.json
-  - wrangler.jsonc
+- functions/
+- node_modules/
+- scripts/
+- schema/
+- Gemfile
+- Gemfile.lock
+- package.json
+- package-lock.json
+- wrangler.jsonc
