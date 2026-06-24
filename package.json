@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "schema-to-data": "node scripts/schema-to-data.js schema/dist/dist-v0.0.1.json _data/generated/schema.json"
+  },
   "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^15.4.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/line-clamp": "^0.4.4",
