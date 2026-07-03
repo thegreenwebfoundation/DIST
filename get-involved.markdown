@@ -2,30 +2,44 @@
 title: Get involved
 date: 2026-05-06 16:21:00 Z
 permalink: "/get-involved"
+layout: page-wide
 ---
 
-Digital Impacts Schema & Taxonomy (DIST) is community driven and stewarded by Green Web Foundation for public benefit. 
+<p class="prose">Digital Impacts Schema & Taxonomy (DIST) is community driven and stewarded by <a href="https://thegreenwebfoundation.org/">Green Web Foundation</a> for public benefit. It is an open-source project, meaning it is free for all to make use of without restriction. All contributions to push forward and maintain this work are welcome, from minor suggestions, to more regular involvement or financial donations. Big or small, there lots of ways to get involved.</p>
 
-# Want to get involved?
-## As an end user organisation
-DIST is intented to help end user organisations understand (and ultimately quantify) the impact of their tech use so they can manage and migitate these impacts.
+<div class="grid gap-x-10 gap-y-6 sm:grid-cols-3 sm:grid-rows-[repeat(3,minmax(0,auto))] sm:grid-flow-col sm:auto-rows-auto mt-10 mb-16">
+  <div class=""><h3 class="text-xl mb-0 border-green border-b-2">Join on-going discussions</h3></div>
+  <div class="">Share your expertise and contribute to on-going discussions on existing issues.</div>
+  <div class=""><a href="https://github.com/thegreenwebfoundation/DIST/issues">View open discussions.</a></div>
+    <div class=""><h3 class="text-xl mb-0 border-green border-b-2">Suggest improvements</h3></div>
+  <div class=""><p>If your idea isn't already captured in our on-going discussions, then flag gaps, inaccuracies, or ideas for improvements.</p></div>
+  <div class=""><a href="https://github.com/thegreenwebfoundation/DIST/issues/new">Create an issue.</a></div>
+  <div class=""><h3 class="text-xl mb-0 border-green border-b-2">Join a weekly call</h3></div>
+  <div class="">Contributors to this open-source project meet with Green Web Foundation team members to discuss issues, ideas and co-ordinate progress. We meet every Monday at 11am UK time / 12pm CET.</div>
+  <div class=""><a href="https://www.thegreenwebfoundation.org/support-form/">Express interest in joining a call.</a></div>
+</div>
 
-You can get started by mapping out your technology estate (in full or part), project, product or service using the categorisation the standard lays out. You can do this on your own using the materials on this website and GitHub or by engaging a partner to help you on this journey.
+<div class="full-width bg-blue-100">
+    <div class="container prose mx-auto py-10">
+        <h2>As an organisation - tech or otherwise</h2>
+        <p>We welcome usage of DIST! Most organisations start by mapping out their technology estate using the <a href="/taxonomy" class="">taxonomy categories</a>. The approach is <span class="font-bold">flexible meaning you can map your estate in full or in part</span> - for example just at an application, product or service level. You can follow this process on your own using the materials provided by this website and our open-source community. To request help in finding a partner to support you on this journey contact <a href="https://www.thegreenwebfoundation.org/services/#enquire">Green Web Foundation</a> who can put you in touch with a suitable person from the DIST community.</p>
+        <p>We are actively looking for organisations willing to share their approach to using DIST with us and/or the wider community. We especially love <span class="font-bold">warts and all case studies</span>, that help us understand where we can make improvements and guide others on how to put these ideas into practice. We'd love to hear from you for a no obligation chat, <a href="https://www.thegreenwebfoundation.org/support-form/">get in touch.</a></p>
+    </div>
+</div>
 
-You might also like to flag gaps, inaccuracies, bugs or suggest improvements. The best way to do that is by raising an [issue on the GitHub repo: https://github.com/thegreenwebfoundation/DIST/issues](https://github.com/thegreenwebfoundation/DIST/issues)
+<div class="full-width bg-white">
+    <div class="container prose mx-auto py-10">
+        <h2>As a member of the sustainability community - tech or otherwise</h2>
+        <p>We welcome <span class="font-bold">constructive challenge</span> from the sustainability community particularly subject matter experts who understand the specific impact dimensions listed on our <a href="/taxonomy" class="">taxonomy page</a> or have other relevant areas of expertise. For example:</p>
+        <ul>
+            <li>Carbon and energy</li>
+            <li>Water</li>
+            <li>Human health</li>
+            <li>Materials, including raw materials extraction, recycling and eWaste disposal</li>
+            <li>Land use / biodiversity impacts</li>
+        </ul>
+        
+        <p>We also welcome referencing and signposting of existing standards, reports, research and data that would enhance the usefulness of this project.</p>
+        <p>Additionally, we're keen for <span class="font-bold">experts who can commit a little more time to help guide, govern and advise the project</span> in general. Although please note this is run as a not-for-profit project so in most instances this would be on a voluntary basis.</p>
+        <p>For anyone of the above, we'd love to hear from you for a no obligation chat, <a href="https://www.thegreenwebfoundation.org/support-form/">get in touch.</a>
 
-## As a technology company
-We welcome usage of DIST and proposed contributions to it from the technology ecosystem. Particularly if you are able to share official data or guidance relating to impacts of tech that you produce, operate or distribute.
-
-One of the easiest ways to do that is by raising an issue on the GitHub repo: https://github.com/thegreenwebfoundation/DIST/issues 
-
-##As a member of the sustainability community
-We welcome constructive challenge from the sustainability community particularly subject matter experts who understand specific impact areas (such as carbon, water, materials etc). We also welcome referencing and signposting of existing standards, reports, research and data that would enhance the usefulness of this project.
-
-We are look for experts to help guide, governance and advise this project (although note this is run as a not-for-profit project so in most instances this would be on a voluntary basis).
-
-We will list here areas that we would welcome expert contribution on:
-
-- Health (Mental and Physical)
-- Materials (including raw materials extraction, recycling and eWaste disposal)
-- Land use / biodiversity impacts

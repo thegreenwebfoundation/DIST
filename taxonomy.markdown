@@ -1,7 +1,7 @@
 ---
 title: Taxonomy
 date: 2026-05-06 10:15:00 Z
-layout: taxonomy
+layout: page-wide
 ---
 
 <div class="sm:flex">
