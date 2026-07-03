@@ -6,7 +6,8 @@
   link: /schema
 - name: News
   link: /news
-- name: About
-  link: /about
 - name: Get involved
   link: /get-involved
+- name: About
+  link: /about
+
