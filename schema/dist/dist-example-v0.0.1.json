@@ -1,4 +1,5 @@
 {
+  "$schema": "https://dist.greenweb.org/schemas/dist/v0.0.1.json",
   "schema_version": "0.0.1",
   "organisation": {
     "name": "Example SaaS Co",
@@ -15,19 +16,10 @@
     },
     "reporting_scope": "own_operations",
     "verification": "self_reported",
-    "disclosures": [
-      {
-        "url": "https://example.com/sustainability/ict-2025-report.pdf",
-        "type": "report",
-        "description": "Annual ICT sustainability report 2025"
-      }
-    ],
     "impacts": [
-
       {
         "dimension": "carbon",
-        "category": "upstream",
-        "subcategory": "employee_hardware",
+        "categories": ["upstream/employee_hardware"],
         "value": 42000,
         "unit": "kgCO2e",
         "methodology_name": "Manufacturer LCA data amortised over device lifespan",
@@ -38,8 +30,7 @@
       },
       {
         "dimension": "carbon",
-        "category": "upstream",
-        "subcategory": "software",
+        "categories": ["upstream/software"],
         "value": 0,
         "unit": "kgCO2e",
         "confidence": 10,
@@ -47,8 +38,7 @@
       },
       {
         "dimension": "carbon",
-        "category": "operational_direct",
-        "subcategory": "employee_devices",
+        "categories": ["operational/direct/employee_devices"],
         "value": 3200,
         "unit": "kgCO2e",
         "methodology_name": "Metered electricity with UK grid carbon intensity",
@@ -59,8 +49,7 @@
       },
       {
         "dimension": "carbon",
-        "category": "operational_indirect",
-        "subcategory": "cloud_services",
+        "categories": ["operational/indirect/cloud_services"],
         "value": 18500,
         "unit": "kgCO2e",
         "methodology_name": "Cloud Carbon Footprinting tool",
@@ -70,8 +59,7 @@
       },
       {
         "dimension": "carbon",
-        "category": "operational_indirect",
-        "subcategory": "saas",
+        "categories": ["operational/indirect/saas"],
         "value": 12000,
         "unit": "kgCO2e",
         "methodology_name": "Spend-based estimate using EEIO factors",
@@ -80,84 +68,12 @@
       },
       {
         "dimension": "carbon",
-        "category": "downstream",
-        "subcategory": "end_user_devices",
+        "categories": ["downstream/end_user_devices"],
         "value": 8500,
         "unit": "kgCO2e",
         "methodology_name": "User base estimate",
         "confidence": 20,
         "notes": "50,000 MAU, average 45-min daily sessions, estimated device power."
-      },
-
-      {
-        "dimension": "energy",
-        "category": "operational_direct",
-        "value": 14200,
-        "unit": "kWh",
-        "methodology_name": "Metered office IT electricity",
-        "confidence": 90,
-        "notes": "2 UK offices. IT equipment only, excludes HVAC and lighting."
-      },
-      {
-        "dimension": "energy",
-        "category": "operational_indirect",
-        "subcategory": "cloud_services",
-        "value": 82000,
-        "unit": "kWh",
-        "methodology_name": "Cloud Carbon Footprinting energy estimate",
-        "methodology_id": "dist:energy:ccf",
-        "confidence": 55
-      },
-
-      {
-        "dimension": "water",
-        "category": "operational_indirect",
-        "subcategory": "cloud_services",
-        "value": 45000,
-        "unit": "litres",
-        "methodology_name": "Estimated from CSP published WUE",
-        "confidence": 20,
-        "notes": "CSP does not provide customer-specific water data. Rough estimate from published regional WUE."
-      },
-
-      {
-        "dimension": "materials",
-        "category": "upstream",
-        "subcategory": "refurbished_percentage",
-        "value": 35,
-        "unit": "%",
-        "methodology_name": "Procurement records",
-        "confidence": 95,
-        "notes": "70 of 200 laptops purchased refurbished. Monitors all new."
-      },
-      {
-        "dimension": "materials",
-        "category": "operational_direct",
-        "subcategory": "average_device_lifespan",
-        "value": 4.2,
-        "unit": "years",
-        "methodology_name": "Asset register average age at decommission",
-        "confidence": 95
-      },
-      {
-        "dimension": "materials",
-        "category": "downstream",
-        "subcategory": "total_decommissioned_weight",
-        "value": 320,
-        "unit": "kg",
-        "methodology_name": "Weighed at handover to disposal partner",
-        "confidence": 95,
-        "notes": "48 laptops, 12 monitors, assorted peripherals."
-      },
-      {
-        "dimension": "materials",
-        "category": "downstream",
-        "subcategory": "waste_diversion_rate",
-        "value": 86,
-        "unit": "%",
-        "methodology_name": "Disposal records from ITAD partner",
-        "confidence": 85,
-        "notes": "275kg diverted (donated/recycled) of 320kg total. 45kg to unknown destination."
       }
     ]
   }

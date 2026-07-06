@@ -60,7 +60,7 @@
         },
         "verification": {
           "type": "string",
-          "enum": ["self reported", "peer reviewed", "independently verified"],
+          "enum": ["self_reported", "peer_reviewed", "independently_verified"],
           "description": "Level of verification applied to this report."
         },
         "verifier": {
@@ -71,19 +71,6 @@
             "url": { "type": "string", "format": "uri" }
           },
           "required": ["name"]
-        },
-        "disclosures": {
-          "type": "array",
-          "description": "Links to supporting documents.",
-          "items": {
-            "type": "object",
-            "properties": {
-              "url": { "type": "string", "format": "uri" },
-              "type": { "type": "string", "enum": ["report", "methodology", "data", "other"] },
-              "description": { "type": "string" }
-            },
-            "required": ["url"]
-          }
         },
         "impacts": {
           "type": "array",
@@ -107,37 +94,13 @@
           "enum": ["carbon"],
           "description": "The DIST taxonomy dimension this impact belongs to. Further dimensions will be added once methodologies agreed - potentially energy, water, materials, land use and health"
         },
-        "category": {
-          "type": "string",
-          "enum": [
-            "upstream",
-            "operational_direct",
-            "operational_indirect",
-            "downstream",
-            "total"
-          ],
-          "description": "Lifecycle category. Optional: omit to report at dimension level only. Use 'total' for an aggregate figure across all categories."
-        },
-        "subcategory": {
-          "type": "string",
-          "description": "Specific technology category within the lifecycle stage. Uses TCS-compatible identifiers where applicable (e.g. 'employee_hardware', 'cloud_services', 'servers', 'end_user_devices'). Free text to allow extension.",
-          "examples": [
-            "software",
-            "employee_hardware",
-            "network_hardware",
-            "server_hardware",
-            "foundation_models",
-            "employee_devices",
-            "networking",
-            "servers",
-            "generators",
-            "offsite_employee_hardware",
-            "cloud_services",
-            "saas",
-            "managed_services",
-            "end_user_devices",
-            "network_data_transfer"
-          ]
+        "categories": {
+          "type": "array",
+          "description": "Array of category identiers from the DIST taxonomy.",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/category"
+          }
         },
         "value": {
           "type": "number",
@@ -157,7 +120,7 @@
           "description": "Machine-readable methodology identifier. Use a DIST published methodology ID where available (e.g. 'dist:carbon:ccf', 'dist:carbon:ghgp-ict'). Can reference external methodology registries. Helps identify whether a recognised methodology was used.",
           "examples": [
             "dist:carbon:ghgp-ict",
-            "dist:carbon:ccf"          
+            "dist:carbon:ccf"
           ]
         },
         "confidence": {
@@ -176,7 +139,34 @@
           "items": { "type": "string" }
         }
       },
-      "required": ["dimension", "value", "unit"]
+      "required": ["dimension", "categories", "value", "unit"]
+    },
+    "category": {
+      "type": "string",
+      "description": "An impact category from the DIST taxonomy: https://dist.greenweb.org/taxonomy",
+      "enum": [
+          "upstream",
+          "upstream/software",
+          "upstream/software/foundation_models",
+          "upstream/employee_hardware",
+          "upstream/network_hardware",
+          "upstream/server_and_storage_hardware",
+          "upstream/content_and_data",
+          "operational",
+          "operational/direct",
+          "operational/direct/employee_devices",
+          "operational/direct/employee_devices/offsite",
+          "operational/direct/networking",
+          "operational/direct/servers_and_storage",
+          "operational/direct/generators",
+          "operational/indirect",
+          "operational/indirect/cloud_services",
+          "operational/indirect/saas",
+          "operational/indirect/managed_services",
+          "downstream",
+          "downstream/end_user_devices",
+          "downstream/network_data_transfer"
+      ]
     }
   }
 }
