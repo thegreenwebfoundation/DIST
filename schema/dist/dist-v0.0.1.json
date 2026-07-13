@@ -4,7 +4,13 @@
   "title": "Digital Impacts Schema and Taxonomy (DIST) v0.0.1",
   "description": "A single-file schema for reporting the impacts of a technology estate across multiple dimensions. Each impact is recorded as an individual entry in the impacts array, allowing reporting at any level of granularity from a single top-level dimension figure down to a specific technology category.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL to the JSON schema file for the version of DIST you are using"
+    },
     "schema_version": {
       "type": "string",
       "enum": ["0.0.1"]
@@ -12,6 +18,7 @@
     "organisation": {
       "type": "object",
       "description": "The reporting organisation.",
+      "additionalProperties": false,
       "properties": {
         "name": {
           "type": "string",
@@ -45,6 +52,7 @@
     "report": {
       "type": "object",
       "description": "A single impacts report covering a defined period.",
+      "additionalProperties": false,
       "properties": {
         "reporting_unit": {
           "type": "string",
@@ -52,6 +60,7 @@
         },
         "reporting_period": {
           "type": "object",
+          "additionalProperties": false,
           "properties": {
             "from": { "type": "string", "format": "date" },
             "to": { "type": "string", "format": "date" }
@@ -66,6 +75,7 @@
         "verifier": {
           "type": "object",
           "description": "Verifying organisation. Required when verification is 'independently_verified'.",
+          "additionalProperties": false,
           "properties": {
             "name": { "type": "string", "description": "The name of the verifying organisation" },
             "url": { "type": "string", "format": "uri", "description": "URL of the verifying organisation" }
@@ -88,6 +98,7 @@
     "impact": {
       "type": "object",
       "description": "A single impact measurement.",
+      "additionalProperties": false,
       "properties": {
         "dimension": {
           "type": "string",

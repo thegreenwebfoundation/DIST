@@ -15,7 +15,6 @@
       "from": "2025-01-01",
       "to": "2025-12-31"
     },
-    "reporting_scope": "own_operations",
     "verification": "independently_verified",
     "verifier": {
       "name": "Example Environmental Consultancy LLP", "url": "https://example.com"
