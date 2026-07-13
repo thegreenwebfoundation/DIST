@@ -22,7 +22,7 @@
     "impacts": [
       {
         "dimension": "carbon",
-        "categories": ["upstream/employee_hardware"],
+        "categories": ["upstream:employee_hardware"],
         "value": 42000,
         "unit": "kgCO2e",
         "methodology_name": "Manufacturer LCA data amortised over device lifespan",
@@ -33,7 +33,7 @@
       },
       {
         "dimension": "carbon",
-        "categories": ["upstream/software"],
+        "categories": ["upstream:software"],
         "value": 0,
         "unit": "kgCO2e",
         "confidence": 10,
@@ -41,7 +41,7 @@
       },
       {
         "dimension": "carbon",
-        "categories": ["operational/direct/employee_devices"],
+        "categories": ["operational:direct:employee_devices"],
         "value": 3200,
         "unit": "kgCO2e",
         "methodology_name": "Metered electricity with UK grid carbon intensity",
@@ -52,7 +52,7 @@
       },
       {
         "dimension": "carbon",
-        "categories": ["operational/indirect/cloud_services"],
+        "categories": ["operational:indirect:cloud_services"],
         "value": 18500,
         "unit": "kgCO2e",
         "methodology_name": "Cloud Carbon Footprinting tool",
@@ -62,7 +62,7 @@
       },
       {
         "dimension": "carbon",
-        "categories": ["operational/indirect/saas"],
+        "categories": ["operational:indirect:saas"],
         "value": 12000,
         "unit": "kgCO2e",
         "methodology_name": "Spend-based estimate using EEIO factors",
@@ -71,7 +71,7 @@
       },
       {
         "dimension": "carbon",
-        "categories": ["downstream/end_user_devices"],
+        "categories": ["downstream:end_user_devices"],
         "value": 8500,
         "unit": "kgCO2e",
         "methodology_name": "User base estimate",
