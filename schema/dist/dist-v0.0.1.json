@@ -118,12 +118,6 @@
             "dist:carbon:ccf"
           ]
         },
-        "confidence": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 100,
-          "description": "Confidence in the reported value as a percentage (0-100). 90-100: primary data, detailed calculation. 50-89: reasonable proxies and estimates. Below 50: rough order-of-magnitude."
-        },
         "notes": {
           "type": "string",
           "description": "Supporting notes: assumptions, scope boundaries, limitations, or anything a reader needs to interpret this value correctly."
