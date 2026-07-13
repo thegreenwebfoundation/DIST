@@ -5,6 +5,7 @@
     "name": "Example SaaS Co",
     "description": "Mid-sized SaaS company, 200 employees, hybrid workforce, public cloud infrastructure.",
     "country": "United Kingdom",
+    "open_corporates_url": "https://opencorporates.com/companies/nl/52191494",
     "sector": "Software and IT Services",
     "size": "51-250"
   },
