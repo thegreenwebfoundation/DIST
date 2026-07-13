@@ -21,11 +21,6 @@
           "type": "string",
           "description": "Brief description of the organisation and its technology estate."
         },
-        "open_corporates_url": {
-          "type": "string",
-          "format": "uri",
-          "description": "Open Corporates URL for the reporting organisation, providing a verifiable corporate identity (e.g. 'https://opencorporates.com/companies/gb/12345678')."
-        },
         "country": {
           "type": "string",
           "description": "Country of registration."
