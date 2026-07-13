@@ -138,15 +138,16 @@
           "anyOf": [
             {
               "const": "low",
-              "description": "Low confidence: a rough order-of-magnitude."
+              "description": "\"low\": a rough order-of-magnitude."
             },
             {
               "const": "medium",
-              "description": "Medium confidence: reasonable proxies and estimates"
+              "description": "\"medium\": reasonable proxies and estimates"
             },
             {
               "const": "high",
-              "description": "High confidence: primary data, detailed calculation"
+              "name": "high",
+              "description": "\"high\": primary data, detailed calculation"
             },
           ],
           "description": "Confidence in the reported value, low, medium, or high"
