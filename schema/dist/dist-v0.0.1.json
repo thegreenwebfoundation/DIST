@@ -123,6 +123,23 @@
             "dist:carbon:ccf"
           ]
         },
+        "confidence": {
+          "anyOf": [
+            {
+              "const": "low",
+              "description": "Low confidence: a rough order-of-magnitude."
+            },
+            {
+              "const": "medium",
+              "description": "Medium confidence: reasonable proxies and estimates"
+            },
+            {
+              "const": "high",
+              "description": "High confidence: primary data, detailed calculation"
+            },
+          ],
+          "description": "Confidence in the reported value, low, medium, or high"
+        },
         "notes": {
           "type": "string",
           "description": "Supporting notes: assumptions, scope boundaries, limitations, or anything a reader needs to interpret this value correctly."

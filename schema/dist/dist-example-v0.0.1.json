@@ -28,7 +28,7 @@
         "unit": "kgCO2e",
         "methodology_name": "Manufacturer LCA data amortised over device lifespan",
         "methodology_id": "dist:carbon:manufacturer-lca",
-        "confidence": 85,
+        "confidence": "medium",
         "notes": "200 laptops, 180 monitors, peripherals. 4-year refresh for laptops, 6 years for monitors.",
         "data_sources": ["https://www.apple.com/environment/"]
       },
@@ -37,7 +37,7 @@
         "categories": ["upstream:software"],
         "value": 0,
         "unit": "kgCO2e",
-        "confidence": 10,
+        "confidence": "low",
         "notes": "Known gap. No reliable methodology for embodied emissions of commercial software."
       },
       {
@@ -47,7 +47,7 @@
         "unit": "kgCO2e",
         "methodology_name": "Metered electricity with UK grid carbon intensity",
         "methodology_id": "dist:carbon:metered-grid",
-        "confidence": 90,
+        "confidence": "high",
         "notes": "2 UK offices, location-based method, DESNZ 2025 conversion factors.",
         "data_sources": ["https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025"]
       },
@@ -58,7 +58,7 @@
         "unit": "kgCO2e",
         "methodology_name": "Cloud Carbon Footprinting tool",
         "methodology_id": "dist:carbon:ccf",
-        "confidence": 60,
+        "confidence": "medium",
         "data_sources": ["https://www.cloudcarbonfootprint.org/"]
       },
       {
@@ -67,7 +67,7 @@
         "value": 12000,
         "unit": "kgCO2e",
         "methodology_name": "Spend-based estimate using EEIO factors",
-        "confidence": 25,
+        "confidence": "low",
         "notes": "Approx. 30 SaaS tools. Low confidence: spend-based only."
       },
       {
@@ -76,7 +76,6 @@
         "value": 8500,
         "unit": "kgCO2e",
         "methodology_name": "User base estimate",
-        "confidence": 20,
         "notes": "50,000 MAU, average 45-min daily sessions, estimated device power."
       }
     ]
