@@ -67,8 +67,8 @@
           "type": "object",
           "description": "Verifying organisation. Required when verification is 'independently_verified'.",
           "properties": {
-            "name": { "type": "string" },
-            "url": { "type": "string", "format": "uri" }
+            "name": { "type": "string", "description": "The name of the verifying organisation" },
+            "url": { "type": "string", "format": "uri", "description": "URL of the verifying organisation" }
           },
           "required": ["name"]
         },
