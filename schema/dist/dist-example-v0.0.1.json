@@ -16,23 +16,30 @@
     },
     "verification": "independently_verified",
     "verifier": {
-      "name": "Example Environmental Consultancy LLP", "url": "https://example.com"
+      "name": "Example Environmental Consultancy LLP",
+      "url": "https://example.com"
     },
     "impacts": [
       {
         "dimension": "carbon",
-        "categories": ["upstream:employee_hardware"],
+        "categories": [
+          "upstream:employee_hardware"
+        ],
         "value": 42000,
         "unit": "kgCO2e",
         "methodology_name": "Manufacturer LCA data amortised over device lifespan",
         "methodology_id": "dist:carbon:manufacturer-lca",
         "confidence": "medium",
         "notes": "200 laptops, 180 monitors, peripherals. 4-year refresh for laptops, 6 years for monitors.",
-        "data_sources": ["https://www.apple.com/environment/"]
+        "data_sources": [
+          "https://www.apple.com/environment/"
+        ]
       },
       {
         "dimension": "carbon",
-        "categories": ["upstream:software"],
+        "categories": [
+          "upstream:software"
+        ],
         "value": 0,
         "unit": "kgCO2e",
         "confidence": "low",
@@ -40,28 +47,38 @@
       },
       {
         "dimension": "carbon",
-        "categories": ["operational:direct:employee_devices"],
+        "categories": [
+          "operational:direct:employee_devices"
+        ],
         "value": 3200,
         "unit": "kgCO2e",
         "methodology_name": "Metered electricity with UK grid carbon intensity",
         "methodology_id": "dist:carbon:metered-grid",
         "confidence": "high",
         "notes": "2 UK offices, location-based method, DESNZ 2025 conversion factors.",
-        "data_sources": ["https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025"]
+        "data_sources": [
+          "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025"
+        ]
       },
       {
         "dimension": "carbon",
-        "categories": ["operational:indirect:cloud_services"],
+        "categories": [
+          "operational:indirect:cloud_services"
+        ],
         "value": 18500,
         "unit": "kgCO2e",
         "methodology_name": "Cloud Carbon Footprinting tool",
         "methodology_id": "dist:carbon:ccf",
         "confidence": "medium",
-        "data_sources": ["https://www.cloudcarbonfootprint.org/"]
+        "data_sources": [
+          "https://www.cloudcarbonfootprint.org/"
+        ]
       },
       {
         "dimension": "carbon",
-        "categories": ["operational:indirect:saas"],
+        "categories": [
+          "operational:indirect:saas"
+        ],
         "value": 12000,
         "unit": "kgCO2e",
         "methodology_name": "Spend-based estimate using EEIO factors",
@@ -70,7 +87,9 @@
       },
       {
         "dimension": "carbon",
-        "categories": ["downstream:end_user_devices"],
+        "categories": [
+          "downstream:end_user_devices"
+        ],
         "value": 8500,
         "unit": "kgCO2e",
         "methodology_name": "User base estimate",

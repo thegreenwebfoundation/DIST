@@ -39,7 +39,15 @@
         },
         "size": {
           "type": "string",
-          "enum": ["1-10", "11-50", "51-250", "251-1000", "1001-5000", "5001-10000", "10001+"],
+          "enum": [
+            "1-10",
+            "11-50",
+            "51-250",
+            "251-1000",
+            "1001-5000",
+            "5001-10000",
+            "10001+"
+          ],
           "description": "Employee count range."
         }
       },
@@ -73,8 +81,15 @@
           "description": "Verifying organisation. Required when verification is 'independently_verified'.",
           "additionalProperties": false,
           "properties": {
-            "name": { "type": "string", "description": "The name of the verifying organisation" },
-            "url": { "type": "string", "format": "uri", "description": "URL of the verifying organisation" }
+            "name": {
+              "type": "string",
+              "description": "The name of the verifying organisation"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL of the verifying organisation"
+            }
           },
           "required": ["name"]
         },
@@ -116,7 +131,15 @@
         "unit": {
           "type": "string",
           "description": "Unit of measurement. Should be spelled out clearly (e.g. 'kgCO2e', 'kWh', 'litres', 'm3', 'kg', 'hectares', 'years'). Defined by the methodology but stated here for transparency.",
-          "examples": ["kgCO2e", "kWh", "litres", "m3", "kg", "hectares", "years"]
+          "examples": [
+            "kgCO2e",
+            "kWh",
+            "litres",
+            "m3",
+            "kg",
+            "hectares",
+            "years"
+          ]
         },
         "methodology_name": {
           "type": "string",
@@ -125,10 +148,7 @@
         "methodology_id": {
           "type": "string",
           "description": "Machine-readable methodology identifier. Use a DIST published methodology ID where available (e.g. 'dist:carbon:ccf', 'dist:carbon:ghgp-ict'). Can reference external methodology registries. Helps identify whether a recognised methodology was used.",
-          "examples": [
-            "dist:carbon:ghgp-ict",
-            "dist:carbon:ccf"
-          ]
+          "examples": ["dist:carbon:ghgp-ict", "dist:carbon:ccf"]
         },
         "confidence": {
           "anyOf": [
@@ -144,7 +164,7 @@
               "const": "high",
               "name": "high",
               "description": "\"high\": primary data, detailed calculation"
-            },
+            }
           ],
           "description": "Confidence in the reported value, low, medium, or high"
         },
@@ -164,27 +184,27 @@
       "type": "string",
       "description": "An impact category from the DIST taxonomy: https://dist.greenweb.org/taxonomy",
       "enum": [
-          "upstream",
-          "upstream:software",
-          "upstream:software:foundation_models",
-          "upstream:employee_hardware",
-          "upstream:network_hardware",
-          "upstream:server_and_storage_hardware",
-          "upstream:content_and_data",
-          "operational",
-          "operational:direct",
-          "operational:direct:employee_devices",
-          "operational:direct:employee_devices:offsite",
-          "operational:direct:networking",
-          "operational:direct:servers_and_storage",
-          "operational:direct:generators",
-          "operational:indirect",
-          "operational:indirect:cloud_services",
-          "operational:indirect:saas",
-          "operational:indirect:managed_services",
-          "downstream",
-          "downstream:end_user_devices",
-          "downstream:network_data_transfer"
+        "upstream",
+        "upstream:software",
+        "upstream:software:foundation_models",
+        "upstream:employee_hardware",
+        "upstream:network_hardware",
+        "upstream:server_and_storage_hardware",
+        "upstream:content_and_data",
+        "operational",
+        "operational:direct",
+        "operational:direct:employee_devices",
+        "operational:direct:employee_devices:offsite",
+        "operational:direct:networking",
+        "operational:direct:servers_and_storage",
+        "operational:direct:generators",
+        "operational:indirect",
+        "operational:indirect:cloud_services",
+        "operational:indirect:saas",
+        "operational:indirect:managed_services",
+        "downstream",
+        "downstream:end_user_devices",
+        "downstream:network_data_transfer"
       ]
     }
   }
