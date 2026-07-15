@@ -1,6 +1,5 @@
 {
   "$schema": "https://dist.greenweb.org/schemas/dist/v0.0.1.json",
-  "schema_version": "0.0.1",
   "organisation": {
     "name": "Example SaaS Co",
     "description": "Mid-sized SaaS company, 200 employees, hybrid workforce, public cloud infrastructure.",

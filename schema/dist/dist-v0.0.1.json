@@ -11,10 +11,6 @@
       "format": "uri",
       "description": "The URL to the JSON schema file for the version of DIST you are using"
     },
-    "schema_version": {
-      "type": "string",
-      "enum": ["0.0.1"]
-    },
     "organisation": {
       "type": "object",
       "description": "The reporting organisation.",
@@ -93,7 +89,7 @@
       "required": ["reporting_period", "verification", "impacts"]
     }
   },
-  "required": ["schema_version", "organisation", "report"],
+  "required": ["$schema", "organisation", "report"],
   "$defs": {
     "impact": {
       "type": "object",
