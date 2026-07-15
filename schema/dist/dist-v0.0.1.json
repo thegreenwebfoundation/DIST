@@ -141,14 +141,9 @@
             "years"
           ]
         },
-        "methodology_name": {
+        "methodology_description": {
           "type": "string",
-          "description": "Human-readable name of the methodology used to calculate this value (e.g. 'Cloud Carbon Footprinting tool', 'Manufacturer LCA data', 'WRI Aqueduct water stress assessment')."
-        },
-        "methodology_id": {
-          "type": "string",
-          "description": "Machine-readable methodology identifier. Use a DIST published methodology ID where available (e.g. 'dist:carbon:ccf', 'dist:carbon:ghgp-ict'). Can reference external methodology registries. Helps identify whether a recognised methodology was used.",
-          "examples": ["dist:carbon:ghgp-ict", "dist:carbon:ccf"]
+          "description": "Human-readable description of the methodology used to calculate this value (e.g. 'Cloud Carbon Footprinting tool', 'Manufacturer LCA data', 'WRI Aqueduct water stress assessment')."
         },
         "confidence": {
           "anyOf": [
