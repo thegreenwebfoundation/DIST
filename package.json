@@ -2,7 +2,7 @@
   "scripts": {
     "deploy": "./scripts/build.sh && wrangler deploy",
     "preview": "./scripts/build.sh && wrangler dev",
-    "schema-lint": "npx jsonlint -i schema/dist/*",
+    "schema-lint": "npx prettier --write schema/dist/*",
     "schema-validate-example": "npx z-schema schema/dist/dist-v0.0.1.json schema/dist/dist-example-v0.0.1.json"
   },
   "dependencies": {
@@ -14,7 +14,6 @@
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
-    "jsonlint": "^1.6.3",
     "prettier": "^3.9.5",
     "wrangler": "^4.104.0",
     "z-schema": "^12.4.0"
