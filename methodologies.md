@@ -25,7 +25,7 @@ DIST is an open framework, and we [welcome community contributions](/get-involve
     <div class="">
       <p>Submit a methodology using the GitHub template which is prefilled with all required contribution fields.</p>
     </div>
-    <div class=""><a href="#">Go to GitHub.</a></div>
+    <div class=""><a href="https://github.com/thegreenwebfoundation/DIST/issues/new?template=submit-methodology.md">Go to GitHub.</a></div>
   </div>
   <div>
     <div class=""><h4 class="text-xl mb-0 border-orange border-b-2">Submit via email</h4></div>
