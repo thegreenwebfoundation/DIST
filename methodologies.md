@@ -46,7 +46,7 @@ For a methodology to be considered for inclusion in the DIST Methodology Map, it
 - Must be relevant to at least one existing DIST category.[^2]
 - Submissions must include information for all of the fields marked as required in the Methodology fields table below.
 
-Further to these guidelines, all submissions should also meet the project's general contribution guidelines as outlined in CONTRIBUTING.md.
+Further to these guidelines, all submissions should also meet the project's general contribution guidelines as outlined in [CONTRIBUTING.md](https://github.com/thegreenwebfoundation/DIST/CONTRIBUTING.md).
 
 **Note:** To suggest a new DIST impact dimension or taxonomy category, please [create an issue](https://github.com/thegreenwebfoundation/DIST/issues) in the DIST GitHub repository.
 
