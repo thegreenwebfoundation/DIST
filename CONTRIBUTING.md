@@ -6,16 +6,16 @@ For an overview about contributing to DIST, please visit the [DIST website](http
 
 ## Suggesting changes or additions to DIST
 
-All changes, suggestions, or proposed additions to the DIST schema, taxonomy, or methodology map should be submitted as a new [GitHub issue](https://github.com/thegreenwebfoundation/DIST/issues).
+All changes, suggestions, or proposed additions to the DIST schema, taxonomy, or methodologies map should be submitted as a new [GitHub issue](https://github.com/thegreenwebfoundation/DIST/issues).
 
 ### New issues
 
-- **Submit new methodologies**: Anyone wishing to submit a new methodology for inclusion in the [DIST Methodology Map](https://dist.greenweb.org/methodologies) should be submitted using the ["Submit methodology" issue template](https://github.com/thegreenwebfoundation/DIST/issues/new?template=submit-methodology.md).
+- **Submit new methodologies**: Anyone wishing to submit a new methodology for inclusion in the [DIST Methodologies Map](https://dist.greenweb.org/methodologies) should be submitted using the ["Submit methodology" issue template](https://github.com/thegreenwebfoundation/DIST/issues/new?template=submit-methodology.md).
 - All other changes, suggestions, and proposed additions can be made using the [standard GitHub issue template](https://github.com/thegreenwebfoundation/green-web-tracker/issues/new).
 
 #### Submit new methodologies
 
-For a methodology to be considered for inclusion in the DIST Methodology Map, it must:
+For a methodology to be considered for inclusion in the DIST Methodologies Map, it must:
 
 - Available through an online, accessible URL.
 - Must be submitted via a GitHub issue in the DIST repository.
