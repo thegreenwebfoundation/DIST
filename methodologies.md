@@ -17,16 +17,19 @@ DIST is an open framework, and we [welcome community contributions](/get-involve
 
 ### Submit a methodology
 
-<div class="grid gap-x-10 gap-y-6 sm:grid-cols-3 sm:grid-rows-[repeat(3,minmax(0,auto))] sm:grid-flow-col sm:auto-rows-auto mt-10 mb-16">
-  <div class=""><h3 class="text-xl mb-0 border-blue border-b-2">Submit via GitHub</h3></div>
-  <div class="">
-    <p>Submit a methodology using the GitHub template which is prefilled with all required contribution fields.</p>
+<div class="grid gap-x-10 gap-y-6 sm:grid-cols-2 sm:grid-flow-col sm:auto-rows-auto mt-10 mb-16">
+  <div>
+    <div class=""><h4 class="text-xl mb-0 border-blue border-b-2">Submit via GitHub</h4></div>
+    <div class="">
+      <p>Submit a methodology using the GitHub template which is prefilled with all required contribution fields.</p>
+    </div>
+    <div class=""><a href="#">Go to GitHub.</a></div>
   </div>
-  <div class=""><a href="#">Go to GitHub.</a></div>
-
-  <div class=""><h3 class="text-xl mb-0 border-orange border-b-2">Submit via email</h3></div>
-  <div class="">If you cannot use GitHub, please contact the Green Web Foundating using the online support form.</div>
-  <div class=""><a href="https://www.thegreenwebfoundation.org/support-form/">Use support form.</a></div>
+  <div>
+    <div class=""><h4 class="text-xl mb-0 border-orange border-b-2">Submit via email</h4></div>
+    <div class=""><p>If you cannot use GitHub, please contact the Green Web Foundating using the online support form.</p></div>
+    <div class=""><a href="https://www.thegreenwebfoundation.org/support-form/">Use support form.</a></div>
+  </div>
 </div>
 
 Below is a summary of the contribution guidelines and submission process that methodologies are expected to follow when being submitted to the DIST Methodology Map.
