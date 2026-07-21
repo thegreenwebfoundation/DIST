@@ -148,20 +148,19 @@
         "confidence": {
           "anyOf": [
             {
-              "const": "low",
-              "description": "\"low\": a rough order-of-magnitude."
+              "const": "high",
+              "description": "\"high\": Calculations that use real, device-specific primary data (manufacturer Product Carbon Footprint datasheets, actual billing or usage data) with clear, documented methodology count as high confidence numbers."
             },
             {
               "const": "medium",
-              "description": "\"medium\": reasonable proxies and estimates"
+              "description": "\"medium\": If “high” is referring to specific products, primary data, and independent verification or peer review, you can think of \"medium\" as following similar principles but where at least one generalisation has had to have been applied."
             },
             {
-              "const": "high",
-              "name": "high",
-              "description": "\"high\": primary data, detailed calculation"
+              "const": "low",
+              "description": "\"low\": Finally \"low\" confidence calculations involve model-on-model stacking, very uncertain activity data, or proxies used to substitute for a different provider entirely."
             }
           ],
-          "description": "Confidence in the reported value, low, medium, or high"
+          "description": "Confidence in the reported value, this can be classified as low, medium, or high, depending on the specific methodology used, following the guidelines at https://dist.greenweb.org/schema/confidence."
         },
         "notes": {
           "type": "string",
