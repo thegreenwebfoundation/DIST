@@ -72,10 +72,11 @@
           "notes": "50,000 MAU, average 45-min daily sessions, estimated device power."
         },
         {
-          "categories": ["upstream:network_hardware", "operational:indirect:saas", "downstream:network_data_transfer"],
-          "value": null,
+          "categories": ["operational:direct:generators"],
+          "value": 0,
           "unit": "kgCO2e",
-          "notes": "In scope but not measured, data not available."
+          "methodology_description": "Out of scope",
+          "notes": "We run none of our own generators."
         }
       ]
     }

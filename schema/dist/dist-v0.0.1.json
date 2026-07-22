@@ -99,7 +99,7 @@
           "properties": {
             "carbon": {
               "type": "array",
-              "description": "Array of individual co2e impact measurements. Each entry reports a single quantifiable impact. Report at whatever granularity you have data for.",
+              "description": "Array of individual co2e impact measurements. Each entry reports a single quantifiable impact. Report at whatever granularity you have data for. The absence of a category does not imply that the impact of that category is 0, but that not measurement is available. Categories with a 0 impact should be explicitly listed",
               "items": {
                 "$ref": "#/$defs/impact"
               }
