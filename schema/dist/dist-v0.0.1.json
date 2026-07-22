@@ -126,8 +126,8 @@
           }
         },
         "value": {
-          "type": "number",
-          "description": "The measured or estimated impact value."
+          "type": ["number", "null"],
+          "description": "The measured or estimated impact value. An explicit 'null' here indidates that an impact exists, but could not be measured, and therefore should be interpreted as 'unknown', rather than 'zero'."
         },
         "unit": {
           "type": "string",
