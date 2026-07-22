@@ -94,10 +94,16 @@
           "required": ["name"]
         },
         "impacts": {
-          "type": "array",
-          "description": "Array of individual impact measurements. Each entry reports a single quantifiable impact. Report at whatever granularity you have data for.",
-          "items": {
-            "$ref": "#/$defs/impact"
+          "type": "object",
+          "description": "Individual impact measurements, organised by particular impact dimension being measured. Each dimension is optional - the absence of a dimension implies that that dimension has not been measured, not that no impact exists. For the moment DIST supports only the 'carbon' dimension - in future versions, other impacts such as 'water', 'energy', and 'health' will be added, once measurement methodology for each of these has been settled upon.",
+          "properties": {
+            "carbon": {
+              "type": "array",
+              "description": "Array of individual co2e impact measurements. Each entry reports a single quantifiable impact. Report at whatever granularity you have data for.",
+              "items": {
+                "$ref": "#/$defs/impact"
+              }
+            }
           }
         }
       },
@@ -111,11 +117,6 @@
       "description": "A single impact measurement.",
       "additionalProperties": false,
       "properties": {
-        "dimension": {
-          "type": "string",
-          "enum": ["carbon"],
-          "description": "The DIST taxonomy dimension this impact belongs to. Further dimensions will be added once methodologies agreed - potentially energy, water, materials, land use and health"
-        },
         "categories": {
           "type": "array",
           "description": "Array of category identiers from the DIST taxonomy.",
@@ -172,7 +173,7 @@
           "items": { "type": "string" }
         }
       },
-      "required": ["dimension", "categories", "value", "unit"]
+      "required": ["categories", "value", "unit"]
     },
     "category": {
       "type": "string",
