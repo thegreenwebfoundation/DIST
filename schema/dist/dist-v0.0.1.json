@@ -4,14 +4,17 @@
   "title": "Digital Impacts Schema and Taxonomy (DIST) v0.0.1",
   "description": "A single-file schema for reporting the impacts of a technology estate across multiple dimensions. Each impact is recorded as an individual entry in the impacts array, allowing reporting at any level of granularity from a single top-level dimension figure down to a specific technology category.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
-    "schema_version": {
+    "$schema": {
       "type": "string",
-      "enum": ["0.0.1"]
+      "format": "uri",
+      "description": "The URL to the JSON schema file for the version of DIST you are using"
     },
     "organisation": {
       "type": "object",
       "description": "The reporting organisation.",
+      "additionalProperties": false,
       "properties": {
         "name": {
           "type": "string",
@@ -36,7 +39,15 @@
         },
         "size": {
           "type": "string",
-          "enum": ["1-10", "11-50", "51-250", "251-1000", "1001-5000", "5001-10000", "10001+"],
+          "enum": [
+            "1-10",
+            "11-50",
+            "51-250",
+            "251-1000",
+            "1001-5000",
+            "5001-10000",
+            "10001+"
+          ],
           "description": "Employee count range."
         }
       },
@@ -45,6 +56,7 @@
     "report": {
       "type": "object",
       "description": "A single impacts report covering a defined period.",
+      "additionalProperties": false,
       "properties": {
         "reporting_unit": {
           "type": "string",
@@ -52,6 +64,7 @@
         },
         "reporting_period": {
           "type": "object",
+          "additionalProperties": false,
           "properties": {
             "from": { "type": "string", "format": "date" },
             "to": { "type": "string", "format": "date" }
@@ -60,111 +73,95 @@
         },
         "verification": {
           "type": "string",
-          "enum": ["self reported", "peer reviewed", "independently verified"],
+          "enum": ["self_reported", "peer_reviewed", "independently_verified"],
           "description": "Level of verification applied to this report."
         },
         "verifier": {
           "type": "object",
           "description": "Verifying organisation. Required when verification is 'independently_verified'.",
+          "additionalProperties": false,
           "properties": {
-            "name": { "type": "string" },
-            "url": { "type": "string", "format": "uri" }
+            "name": {
+              "type": "string",
+              "description": "The name of the verifying organisation"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL of the verifying organisation"
+            }
           },
           "required": ["name"]
         },
-        "disclosures": {
-          "type": "array",
-          "description": "Links to supporting documents.",
-          "items": {
-            "type": "object",
-            "properties": {
-              "url": { "type": "string", "format": "uri" },
-              "type": { "type": "string", "enum": ["report", "methodology", "data", "other"] },
-              "description": { "type": "string" }
-            },
-            "required": ["url"]
-          }
-        },
         "impacts": {
-          "type": "array",
-          "description": "Array of individual impact measurements. Each entry reports a single quantifiable impact. Report at whatever granularity you have data for.",
-          "items": {
-            "$ref": "#/$defs/impact"
+          "type": "object",
+          "description": "Individual impact measurements, organised by particular impact dimension being measured. Each dimension is optional - the absence of a dimension implies that that dimension has not been measured, not that no impact exists. For the moment DIST supports only the 'carbon' dimension - in future versions, other impacts such as 'water', 'energy', and 'health' will be added, once measurement methodology for each of these has been settled upon.",
+          "properties": {
+            "carbon": {
+              "type": "array",
+              "description": "Array of individual co2e impact measurements. Each entry reports a single quantifiable impact. Report at whatever granularity you have data for. The absence of a category does not imply that the impact of that category is 0, but that not measurement is available. Categories with a 0 impact should be explicitly listed",
+              "items": {
+                "$ref": "#/$defs/impact"
+              }
+            }
           }
         }
       },
       "required": ["reporting_period", "verification", "impacts"]
     }
   },
-  "required": ["schema_version", "organisation", "report"],
+  "required": ["$schema", "organisation", "report"],
   "$defs": {
     "impact": {
       "type": "object",
       "description": "A single impact measurement.",
+      "additionalProperties": false,
       "properties": {
-        "dimension": {
-          "type": "string",
-          "enum": ["carbon"],
-          "description": "The DIST taxonomy dimension this impact belongs to. Further dimensions will be added once methodologies agreed - potentially energy, water, materials, land use and health"
-        },
-        "category": {
-          "type": "string",
-          "enum": [
-            "upstream",
-            "operational_direct",
-            "operational_indirect",
-            "downstream",
-            "total"
-          ],
-          "description": "Lifecycle category. Optional: omit to report at dimension level only. Use 'total' for an aggregate figure across all categories."
-        },
-        "subcategory": {
-          "type": "string",
-          "description": "Specific technology category within the lifecycle stage. Uses TCS-compatible identifiers where applicable (e.g. 'employee_hardware', 'cloud_services', 'servers', 'end_user_devices'). Free text to allow extension.",
-          "examples": [
-            "software",
-            "employee_hardware",
-            "network_hardware",
-            "server_hardware",
-            "foundation_models",
-            "employee_devices",
-            "networking",
-            "servers",
-            "generators",
-            "offsite_employee_hardware",
-            "cloud_services",
-            "saas",
-            "managed_services",
-            "end_user_devices",
-            "network_data_transfer"
-          ]
+        "categories": {
+          "type": "array",
+          "description": "Array of category identiers from the DIST taxonomy.",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/category"
+          }
         },
         "value": {
-          "type": "number",
-          "description": "The measured or estimated impact value."
+          "type": ["number", "null"],
+          "description": "The measured or estimated impact value. An explicit 'null' here indidates that an impact exists, but could not be measured, and therefore should be interpreted as 'unknown', rather than 'zero'."
         },
         "unit": {
           "type": "string",
           "description": "Unit of measurement. Should be spelled out clearly (e.g. 'kgCO2e', 'kWh', 'litres', 'm3', 'kg', 'hectares', 'years'). Defined by the methodology but stated here for transparency.",
-          "examples": ["kgCO2e", "kWh", "litres", "m3", "kg", "hectares", "years"]
-        },
-        "methodology_name": {
-          "type": "string",
-          "description": "Human-readable name of the methodology used to calculate this value (e.g. 'Cloud Carbon Footprinting tool', 'Manufacturer LCA data', 'WRI Aqueduct water stress assessment')."
-        },
-        "methodology_id": {
-          "type": "string",
-          "description": "Machine-readable methodology identifier. Use a DIST published methodology ID where available (e.g. 'dist:carbon:ccf', 'dist:carbon:ghgp-ict'). Can reference external methodology registries. Helps identify whether a recognised methodology was used.",
           "examples": [
-            "dist:carbon:ghgp-ict",
-            "dist:carbon:ccf"          
+            "kgCO2e",
+            "kWh",
+            "litres",
+            "m3",
+            "kg",
+            "hectares",
+            "years"
           ]
         },
+        "methodology_description": {
+          "type": "string",
+          "description": "Human-readable description of the methodology used to calculate this value (e.g. 'Cloud Carbon Footprinting tool', 'Manufacturer LCA data', 'WRI Aqueduct water stress assessment')."
+        },
         "confidence": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 100,
-          "description": "Confidence in the reported value as a percentage (0-100). 90-100: primary data, detailed calculation. 50-89: reasonable proxies and estimates. Below 50: rough order-of-magnitude."
+          "anyOf": [
+            {
+              "const": "high",
+              "description": "\"high\": Calculations that use real, device-specific primary data (manufacturer Product Carbon Footprint datasheets, actual billing or usage data) with clear, documented methodology count as high confidence numbers."
+            },
+            {
+              "const": "medium",
+              "description": "\"medium\": If “high” is referring to specific products, primary data, and independent verification or peer review, you can think of \"medium\" as following similar principles but where at least one generalisation has had to have been applied."
+            },
+            {
+              "const": "low",
+              "description": "\"low\": Finally \"low\" confidence calculations involve model-on-model stacking, very uncertain activity data, or proxies used to substitute for a different provider entirely."
+            }
+          ],
+          "description": "Confidence in the reported value, this can be classified as low, medium, or high, depending on the specific methodology used, following the guidelines at https://dist.greenweb.org/schema/confidence."
         },
         "notes": {
           "type": "string",
@@ -176,7 +173,34 @@
           "items": { "type": "string" }
         }
       },
-      "required": ["dimension", "value", "unit"]
+      "required": ["categories", "value", "unit"]
+    },
+    "category": {
+      "type": "string",
+      "description": "An impact category from the DIST taxonomy: https://dist.greenweb.org/taxonomy",
+      "enum": [
+        "upstream",
+        "upstream:software",
+        "upstream:software:foundation_models",
+        "upstream:employee_hardware",
+        "upstream:network_hardware",
+        "upstream:server_and_storage_hardware",
+        "upstream:content_and_data",
+        "operational",
+        "operational:direct",
+        "operational:direct:employee_devices",
+        "operational:direct:employee_devices:offsite",
+        "operational:direct:networking",
+        "operational:direct:servers_and_storage",
+        "operational:direct:generators",
+        "operational:indirect",
+        "operational:indirect:cloud_services",
+        "operational:indirect:saas",
+        "operational:indirect:managed_services",
+        "downstream",
+        "downstream:end_user_devices",
+        "downstream:network_data_transfer"
+      ]
     }
   }
 }
