@@ -18,12 +18,12 @@ layout: page-wide
   </div>
 </div>
 
-<div class="mt-10 mb-6">
+<div id="categories" class="mt-10 mb-6">
   {% include DIST/taxonomy-categories-overview.html title=true %}
 </div>
 
 
-<div class="mt-6 mb-10">
+<div id="dimensions" class="mt-6 mb-10">
   <h2 class="text-2xl">Impact Dimensions</h2>
   <div class="prose mt-6">
     <p>DIST's default taxonomy is extensible so it can be applied to multiple environmental impact dimensions. We welcome contributions to improve all aspects of this work - see <a href="/get-involved">get involved</a>.</p>
