@@ -1,10 +1,11 @@
 ---
+title: 'New methodology submission: METHODOLOGY_NAME'
 name: Submit a methodology
-about: Use this issue template to submit new methodologies to the DIST Methodologies Map.
-title: "New methodology submission: METHODOLOGY_NAME"
-labels: 
-    - Methdologies map
-assignees: 'fershad'
+about: Use this issue template to submit new methodologies to the DIST Methodologies
+  Map.
+labels:
+- Methdologies map
+assignees: fershad
 ---
 
 To propose a new methodology for addition to the [DIST Methodologies Map](https://dist.greenweb.org/methodologies) please submit responses for all the questions **not marked as [OPTIONAL]** listed below.
