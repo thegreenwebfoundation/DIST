@@ -5,11 +5,10 @@ layout: methodologies
 permalink: "/methodologies/contribute"
 ---
 
-## Contribution
+## Contribute
 
 DIST is an open framework, and we [welcome community contributions](/get-involved). Individuals or organisations wishing to contribute a methodology to the DIST Methodologies Map should first read content of the sections below.
 
-### Submit a methodology
 
 <div class="grid gap-x-10 gap-y-6 sm:grid-cols-2 sm:grid-flow-col sm:auto-rows-auto mt-10 mb-16">
   <div>
