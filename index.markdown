@@ -27,7 +27,7 @@ layout: home
     <div>
         <p class="mt-12 p-4 text-2xl border-t-2 border-b-2">Coming soon</p>
     </div>
-    <div class=""><a href="/methodologies" class="font-bold">Vist methodologies overview →</a></div>
+    <div class=""><a href="/methodologies" class="font-bold">Visit methodologies overview →</a></div>
     <div class=""><h2 class="mb-0 text-2xl border-t-0">Schema</h2></div>
     <div class=""><p>Designed to become the definitive data format for sharing quantified tech impacts.</p>
     </div>
