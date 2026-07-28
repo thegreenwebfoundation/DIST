@@ -11,23 +11,23 @@
       "format": "uri",
       "description": "The URL to the JSON schema file for the version of DIST you are using"
     },
-    "organisation": {
+    "organization": {
       "type": "object",
-      "description": "The reporting organisation.",
+      "description": "The reporting organization.",
       "additionalProperties": false,
       "properties": {
         "name": {
           "type": "string",
-          "description": "Name of the reporting organisation."
+          "description": "Name of the reporting organization."
         },
         "description": {
           "type": "string",
-          "description": "Brief description of the organisation and its technology estate."
+          "description": "Brief description of the organization and its technology estate."
         },
         "open_corporates_url": {
           "type": "string",
           "format": "uri",
-          "description": "Open Corporates URL for the reporting organisation, providing a verifiable corporate identity (e.g. 'https://opencorporates.com/companies/gb/12345678')."
+          "description": "Open Corporates URL for the reporting organization, providing a verifiable corporate identity (e.g. 'https://opencorporates.com/companies/gb/12345678')."
         },
         "country": {
           "type": "string",
@@ -78,17 +78,17 @@
         },
         "verifier": {
           "type": "object",
-          "description": "Verifying organisation. Required when verification is 'independently_verified'.",
+          "description": "Verifying organization. Required when verification is 'independently_verified'.",
           "additionalProperties": false,
           "properties": {
             "name": {
               "type": "string",
-              "description": "The name of the verifying organisation"
+              "description": "The name of the verifying organization"
             },
             "url": {
               "type": "string",
               "format": "uri",
-              "description": "URL of the verifying organisation"
+              "description": "URL of the verifying organization"
             }
           },
           "required": ["name"]
@@ -110,7 +110,7 @@
       "required": ["reporting_period", "verification", "impacts"]
     }
   },
-  "required": ["$schema", "organisation", "report"],
+  "required": ["$schema", "organization", "report"],
   "$defs": {
     "impact": {
       "type": "object",
