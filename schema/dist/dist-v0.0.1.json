@@ -31,7 +31,8 @@
         },
         "country": {
           "type": "string",
-          "description": "Country of registration."
+          "description": "A valid 2-digit ISO 3166 alpha-2 country code for the country of registration of this organization",
+          "pattern": "^[A-Z]{2}$"
         },
         "sector": {
           "type": "string",
