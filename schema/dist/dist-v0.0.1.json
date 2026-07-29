@@ -45,6 +45,18 @@
             "household"
           ]
         },
+        "industries": {
+          "type": "array",
+          "description": "Industrial sector according to the ISICv5 / NACE categories.",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/industry"
+          }
+        },
+        "activity_description": {
+          "type": "string",
+          "description": "Text description"
+        },
         "size": {
           "type": "string",
           "enum": ["0-9", "10-19", "20-49", "50-249", "250+"],
@@ -194,6 +206,12 @@
         "downstream:end_user_devices",
         "downstream:network_data_transfer"
       ]
+    },
+    "industry": {
+      "type": "string",
+      "description": "An industrial sector, from the ISICv5 / NACE taxonomy ",
+      "pattern": "^[A-U][0-9]{2,4}$|^[A-U]$",
+      "examples": ["A", "B01", "C104", "D3530"]
     }
   }
 }
