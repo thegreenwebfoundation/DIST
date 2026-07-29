@@ -47,16 +47,8 @@
         },
         "size": {
           "type": "string",
-          "enum": [
-            "1-10",
-            "11-50",
-            "51-250",
-            "251-1000",
-            "1001-5000",
-            "5001-10000",
-            "10001+"
-          ],
-          "description": "Employee count range."
+          "enum": ["0-9", "10-19", "20-49", "50-249", "250+"],
+          "description": "Employee count range, based on Eurostat employment size classes."
         }
       },
       "required": ["name"]
