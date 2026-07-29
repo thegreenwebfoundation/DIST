@@ -36,7 +36,14 @@
         },
         "sector": {
           "type": "string",
-          "description": "Primary sector or industry."
+          "description": "Primary sector, according to the SNA 2008 / ESA 2010 standard categories for national accounting.",
+          "enum": [
+            "non_financial_corporation",
+            "financial_corporation",
+            "government",
+            "non_profit",
+            "household"
+          ]
         },
         "size": {
           "type": "string",
