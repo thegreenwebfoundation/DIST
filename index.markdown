@@ -5,9 +5,38 @@ layout: home
 ---
 
 <div class="prose">
-<p class="text-med">Digital Impacts Schema and Taxonomy (DIST) provides a suite of open-source tools enabling any organisation to report on their digital technology estate's environmental impacts in a consistent way that others can understand.</p>
+<p class="text-med">is standards-aligned guidance to structure, categorise, and report  your organisation’s digital sustainability data.</p>
 </div>
 
+<div class="full-width bg-blue-100">
+    <div class="container prose mx-auto py-10">
+    <h2>Environmental reporting is hard. DIST is here to help.</h2>
+        <h3>Aligned to existing standards</h3>
+        <p>A framework aligned with existing environmental reporting standards, with flexibility to grow as future standards emerge.</p>
+        <h3>Beyond carbon</h3>
+        <p>DIST is designed to extend beyond just carbon reporting, to align with emerging standards around water, health, and other areas.</p>
+        <h3>Open guidance from digital sustainability practioners</h3>
+        <p>Publicly accessible resources collated by experts in digital sustainability to guide your organisation through the impact assessment and reporting process.</p>
+
+        <!-- <h3>DIST's vision</h3>
+
+        <p>Our vision is to see a shared language for digital impacts that support consistent, machine-readable, and comparable reporting formats, in a way that is:</p>
+
+        <ul>
+            <li>Practical enough for any organisation to start using tomorrow with whatever data they have.</li>
+            <li>Rigorous enough to satisfy auditors, regulators and standards bodies.</li>
+            <li>Broad enough to cover planetary, societal and individual impacts.</li>
+            <li>Flexible enough to accommodate evolving measurement methodologies without breaking backwards compatibility.</li>
+            <li>Open enough to be adopted, extended and improved by anyone.</li>
+        </ul> -->
+    </div>
+</div>
+
+<div>
+<div class="prose">
+<h2>What DIST offers.</h2>
+<p>DIST provides a suite of open-source tools to support your assessment and reporting of your organisation's technology environmental impacts.</p>
+</div>
 <div class="grid gap-x-10 gap-y-6 sm:grid-cols-3 sm:grid-rows-[repeat(4,minmax(0,auto))] sm:grid-flow-col sm:auto-rows-auto mt-10 mb-20">
     <div class="..."><h2 class="mb-0 text-2xl border-t-0">Taxonomy</h2></div>
     <div class="">
@@ -39,41 +68,24 @@ layout: home
     </div>
     <div class=""><a href="/schema" class="font-bold">Visit schema overview →</a></div>
 </div>
+</div>
 
 <div class="full-width bg-green-100">
     <div class="container prose mx-auto py-10">
-        <h2 class="">Get started</h2>
+        <h2 class="">DIST meets you where you are.</h2>
+        <h3>You're new to environmental impact reporting, and you don't know where to start</h3>
         <p>Most organisations start by mapping out their technology estate using the <a href="/taxonomy" class="">taxonomy categories</a>. The approach is <span class="font-bold">flexible meaning you can map your estate in full or in part</span> - for example just at an application, product or service level.</p>
+        <h3>You know you have to report something, but aren't sure how to work it out</h3>
         <p>Our <a href="/methodologies" class="">methodologies map</a> (coming soon) is a curated list of approaches you can use to help you estimate figures for your technology estate. The <a href="/schema" class="">schema</a> is there to help you with the final step of making your estimated figures standardised and transparent for others to see.</p>
-        <p>You can follow this process on your own using the materials provided by this website and our open-source community. To request help in finding a partner to support you on this journey contact <a href="https://www.thegreenwebfoundation.org/services/#enquire">Green Web Foundation</a> who can put you in touch with a suitable person from the DIST community.</p>
+        <h3>You already do environmental impact reporting, but want to standardise how to present it</h3>
+        <p>WORDS!</p>
     </div>
 </div>
 
 <div class="prose mx-auto py-10">
-    <h2>Contribute back</h2>
-    <p>You can get involved in this project in a variety of ways, large or small, and we welcome all contributors, novice or otherwise.</p>
-    <p>Flag gaps, inaccuracies, or improvements by raising <a href="https://github.com/thegreenwebfoundation/DIST/issues">an issue via our GitHub repo</a>, or contribute to on-going discussions on existing issues.</p>
-    <p><a href="/get-involved">More ways to get involved  →</a></p>
+    <h2>Need help? Get support from the humans behind it.</h2>
+    <p>DIST is a project from the Green Web Foundation with the support of other digital sustainability professionals in our open source community.</p>
+    <p>If you need help getting started with DIST, reach out to us! We can assess your need, and put you in contact with an appropriate group that can help you.</p>
+    <p><a href="https://www.thegreenwebfoundation.org/support-form/">Contact us</a></p>
 </div>
 
-<div class="full-width bg-blue-100">
-    <div class="container prose mx-auto py-10">
-        <h2 class="">Why DIST?</h2>
-        <p> Right now, lots of responsible organisations understand that the production and use of digital technologies has a significant and expanding environmental impact.</p>
-        <p>These organisations are stepping up and working hard to estimate, report on and ultimately tackle these impacts.</p>
-        <p class="font-bold">But because there is no consistent, open, structured way for organisations to report on or share the data they are producing, we're hamstrung by our inability to use this data for comparing different organisations or aggregating it.</p>
-        <p>DIST sets out to work collaboratively with others across the field to address this.</p>
-
-        <h3>DIST's vision</h3>
-
-        <p>Our vision is to see a shared language for digital impacts that support consistent, machine-readable, and comparable reporting formats, in a way that is:</p>
-
-        <ul>
-            <li>Practical enough for any organisation to start using tomorrow with whatever data they have.</li>
-            <li>Rigorous enough to satisfy auditors, regulators and standards bodies.</li>
-            <li>Broad enough to cover planetary, societal and individual impacts.</li>
-            <li>Flexible enough to accommodate evolving measurement methodologies without breaking backwards compatibility.</li>
-            <li>Open enough to be adopted, extended and improved by anyone.</li>
-        </ul>
-    </div>
-</div>
