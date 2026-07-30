@@ -1,12 +1,14 @@
 {
   "$schema": "https://dist.greenweb.org/schemas/dist/v0.0.1.json",
-  "organisation": {
+  "organization": {
     "name": "Example SaaS Co",
     "description": "Mid-sized SaaS company, 200 employees, hybrid workforce, public cloud infrastructure.",
-    "country": "United Kingdom",
+    "country": "GB",
     "open_corporates_url": "https://opencorporates.com/companies/nl/52191494",
-    "sector": "Software and IT Services",
-    "size": "51-250"
+    "sector": "non_financial_corporation",
+    "industries": ["J62"],
+    "activity_description": "IT and software services",
+    "size": "50-249"
   },
   "report": {
     "reporting_unit": "Global Operations",
