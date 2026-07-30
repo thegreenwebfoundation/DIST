@@ -8,9 +8,9 @@ Digital Impacts Schema and Taxonomy (DIST) is open-source, community driven and 
 
 ## Our community
 
-A big thank you to the group of sustainability professionals collaborating with us to bring DIST to life.
+A big thank you to the group of sustainability professionals collaborating with us to bring DIST to life. Special shout outs to:
 
-[Oliver Cronk](https://www.linkedin.com/in/cronky/), founder of [Cronk Advisory](https://cronkadvisory.com/).
+- [Oliver Cronk](https://www.linkedin.com/in/cronky/), founder of [Cronk Advisory](https://cronkadvisory.com/).
 
 DIST builds upon the open-source [Technology Carbon Standard](https://www.techcarbonstandard.org/) project by Scott Logic.
 
