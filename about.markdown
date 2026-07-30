@@ -21,9 +21,6 @@ Sustainability reporting is really difficult, and the complexity only goes up wh
 
 **We want to help make the invisible impacts visible and the incomparable organisations comparable.**
 
-Organizations can measure the carbon footprints of their technology with increasing confidence, but carbon is only one dimension of technology's impact on the world.
-Water consumption, electronic waste, biodiversity loss, supply chain conditions, and the societal and individual harms caused by technology systems are all material impacts. Today there is no consistent, open, structured way for organisations to report on or share data about these impacts alongside their carbon data.
-
 Our vision is an open-source schema and taxonomy that enables any organization to understand and report on the full spectrum of their technology estate's impacts in a consistent, machine-readable, and comparable format. We're working towards a shared language for digital impacts that is:
 
 * Practical enough for a mid-sized organisation to start using tomorrow with whatever data they have
