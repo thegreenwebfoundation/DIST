@@ -47,7 +47,7 @@ Our vision is an open-source, well maintained and trust suite of tools that enab
    
    Even where organizations do report, the data sits in PDFs, annual reports and marketing materials. It is not structured, not discoverable, and not comparable. The carbon.txt project has begun solving this for carbon and sustainability reporting data. We need to extend that pattern.
 
-4. ** The conversation about technology sustainability is too narrow.**
+4. **The conversation about technology sustainability is too narrow.**
    There's a risk that digital sustainability becomes synonymous with carbon, green coding and energy efficiency. These matter, but they are not enough. Both planetary boundaries and social foundations are affected by technology. We need a schema that reflects this breadth.
 
 5. **Supplier impact data is inconsistent, incomparable, and often absent.**
