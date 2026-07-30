@@ -12,6 +12,8 @@ A big thank you to the group of sustainability professionals collaborating with 
 
 [Oliver Cronk](https://www.linkedin.com/in/cronky/), founder of [Cronk Advisory](https://cronkadvisory.com/).
 
+DIST builds upon the open-source [Technology Carbon Standard](https://www.techcarbonstandard.org/) project by Scott Logic.
+
 
 ## Our vision and why this project exists
 
