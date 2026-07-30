@@ -17,7 +17,9 @@ DIST builds upon the open-source [Technology Carbon Standard](https://www.techca
 
 ## Our vision and why this project exists
 
-Sustainability reporting is really difficult, and the complexity only goes up when you apply it to digital technologies. DIST exists to help people in organizations trying to do the right thing and get a handle on the environmental impacts of digital technologies. **We want to help make the invisible impacts visible and the incomparable organisations comparable.**
+Sustainability reporting is really difficult, and the complexity only goes up when you apply it to digital technologies. DIST exists to help people in organizations trying to do the right thing and get a handle on the environmental impacts of digital technologies. 
+
+**We want to help make the invisible impacts visible and the incomparable organisations comparable.**
 
 Organizations can measure the carbon footprints of their technology with increasing confidence, but carbon is only one dimension of technology's impact on the world.
 Water consumption, electronic waste, biodiversity loss, supply chain conditions, and the societal and individual harms caused by technology systems are all material impacts. Today there is no consistent, open, structured way for organisations to report on or share data about these impacts alongside their carbon data.
