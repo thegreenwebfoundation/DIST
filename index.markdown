@@ -4,43 +4,30 @@ date: 2026-05-19 13:57:00 Z
 layout: home
 ---
 
-<div class="prose">
-<p class="text-med">is standards-aligned guidance to structure, categorise, and report  your organisation’s digital sustainability data.</p>
-</div>
-
-<div class="full-width bg-blue-100">
-    <div class="container prose mx-auto py-10">
-    <h2>Environmental reporting is hard. DIST is here to help.</h2>
-        <h3>Aligned to existing standards</h3>
-        <p>A framework aligned with existing environmental reporting standards, with flexibility to grow as future standards emerge.</p>
-        <h3>Beyond carbon</h3>
-        <p>DIST is designed to extend beyond just carbon reporting, to align with emerging standards around water, health, and other areas.</p>
-        <h3>Open guidance from digital sustainability practioners</h3>
-        <p>Publicly accessible resources collated by experts in digital sustainability to guide your organisation through the impact assessment and reporting process.</p>
-
-        <!-- <h3>DIST's vision</h3>
-
-        <p>Our vision is to see a shared language for digital impacts that support consistent, machine-readable, and comparable reporting formats, in a way that is:</p>
-
-        <ul>
-            <li>Practical enough for any organisation to start using tomorrow with whatever data they have.</li>
-            <li>Rigorous enough to satisfy auditors, regulators and standards bodies.</li>
-            <li>Broad enough to cover planetary, societal and individual impacts.</li>
-            <li>Flexible enough to accommodate evolving measurement methodologies without breaking backwards compatibility.</li>
-            <li>Open enough to be adopted, extended and improved by anyone.</li>
-        </ul> -->
+<div class="container lg:mt-20">
+    <h2 class="text-4xl leading-[1.3] border-0 mb-0">Sustainability reporting is hard & digital technologies are complex.</h2>
+    <h3 class="text-3xl inline-block border-0 mt-4 px-6 py-3 bg-green-200 rounded-xl font-normal">DIST is here to help.</h3>
+    <div class="grid gap-x-16 gap-y-2 md:grid-cols-3 md:grid-rows-[repeat(2,minmax(0,auto))] md:grid-flow-col md:auto-rows-auto mt-10 mb-20">
+        <h4 class="text-xl"><span class="text-orange">✔</span> Open guidance</h4>
+        <p class="text-charcoal-700 mb-6">Publicly accessible resources stewarded by seasoned digital sustainability practioners to guide you through impact assessment and reporting best practices.</p>
+        <h4 class="text-xl"><span class="text-orange">✔</span> Aligned to existing standards</h4>
+        <p class="text-charcoal-700 mb-6">A framework aligned with existing environmental reporting standards, with flexibility to adapt as future standards emerge.</p>
+        <h4 class="text-xl"><span class="text-orange">✔</span> Holistic and beyond carbon</h4>
+        <p class="text-charcoal-700">Covering digital's full supply chain and designed to extend beyond carbon towards emerging impact dimensions such as water, health, critical minerals.</p>
     </div>
 </div>
 
 <div>
 <div class="prose">
-<h2>What DIST offers.</h2>
-<p>DIST provides a suite of open-source tools to support your assessment and reporting of your organisation's technology environmental impacts.</p>
+<h2 class="text-4xl leading-[1.3] border-0 mb-0">What DIST offers.</h2>
+<p class="text-xl">An integrated suite of three open-source tools to support assessment and reporting of your organisation's digital technology environmental impacts.</p>
 </div>
-<div class="grid gap-x-10 gap-y-6 sm:grid-cols-3 sm:grid-rows-[repeat(4,minmax(0,auto))] sm:grid-flow-col sm:auto-rows-auto mt-10 mb-20">
-    <div class="..."><h2 class="mb-0 text-2xl border-t-0">Taxonomy</h2></div>
-    <div class="">
-        <p>Standardised categorisation system across multiple impact dimensions for structuring impacts and ensuring nothing important is missed.</p>
+<div class="grid gap-x-10 gap-y-6 md:grid-cols-3 md:grid-rows-[repeat(4,minmax(0,auto))] md:grid-flow-col md:auto-rows-auto mt-16 mb-20">
+    <div class="...">
+        <p class="text-orange-700 font-bold uppercase">Catch the important things</p>
+        <h2 class="mb-0 pt-3 text-2xl border-t-0">1. Taxonomy</h2>
+    </div>
+    <div class=""><p>Standardised categorisation system covering digital's full lifecycle and compatible across multiple impact dimensions - ensures nothing important is missed.</p>
     </div>
     <div>
         <figure class="m-4 text-center">
@@ -48,17 +35,22 @@ layout: home
             <figcaption class="text-charcoal-600 italic pt-2">A screenshot of the default taxonomy.</figcaption>
         </figure>
     </div>
-    <div class=""><a href="/taxonomy" class="font-bold">Visit taxonomy overview →</a></div>
-    <div class=""><h2 class="mb-0 text-2xl border-t-0">Methodologies</h2></div>
+    <div class="mb-6"><a href="/taxonomy" class="font-bold">Visit taxonomy overview →</a></div>
     <div class="">
-        <p>Curated list of measurement methodologies to support data production for all categories of the taxonomy.</p>
+        <p class="text-orange-700 font-bold uppercase">Measure with confidence</p>
+        <h2 class="mb-0 pt-3 text-2xl border-t-0">2. Methodologies</h2></div>
+    <div class="">
+        <p>Curated list of available measurement and estimation methodologies across all categories of the taxonomy - find ways to fill the gaps in your numbers.</p>
     </div>
     <div>
         <p class="mt-12 p-4 text-2xl border-t-2 border-b-2">Coming soon</p>
     </div>
-    <div class=""><a href="/methodologies" class="font-bold">Visit methodologies overview →</a></div>
-    <div class=""><h2 class="mb-0 text-2xl border-t-0">Schema</h2></div>
-    <div class=""><p>Designed to become the definitive data format for sharing quantified tech impacts.</p>
+    <div class="mb-6"><a href="/methodologies" class="font-bold">Visit methodologies overview →</a></div>
+    <div class="">
+        <p class="text-orange-700 font-bold uppercase">Share transparently</p>
+        <h2 class="mb-0 pt-3 text-2xl border-t-0">3. Schema</h2>
+    </div>
+    <div class=""><p>A structured data format for sharing your quantified tech impact numbers - creates transparency about your scope and measurement approaches.</p>
     </div>
     <div>
         <figure class="m-4 text-center">
@@ -66,26 +58,28 @@ layout: home
         <figcaption class="text-charcoal-600 italic pt-2">A screenshot of emerging DIST schema.</figcaption>
         </figure>
     </div>
-    <div class=""><a href="/schema" class="font-bold">Visit schema overview →</a></div>
+    <div class="mb-6"><a href="/schema" class="font-bold">Visit schema overview →</a></div>
 </div>
 </div>
 
 <div class="full-width bg-green-100">
     <div class="container prose mx-auto py-10">
-        <h2 class="">DIST meets you where you are.</h2>
-        <h3>You're new to environmental impact reporting, and you don't know where to start</h3>
-        <p>Most organisations start by mapping out their technology estate using the <a href="/taxonomy" class="">taxonomy categories</a>. The approach is <span class="font-bold">flexible meaning you can map your estate in full or in part</span> - for example just at an application, product or service level.</p>
-        <h3>You know you have to report something, but aren't sure how to work it out</h3>
-        <p>Our <a href="/methodologies" class="">methodologies map</a> (coming soon) is a curated list of approaches you can use to help you estimate figures for your technology estate. The <a href="/schema" class="">schema</a> is there to help you with the final step of making your estimated figures standardised and transparent for others to see.</p>
-        <h3>You already do environmental impact reporting, but want to standardise how to present it</h3>
-        <p>WORDS!</p>
+        <h2 class="text-4xl leading-[1.3] border-0 mt-10 mb-0">DIST meets you where you are.</h2>
+        <p class="text-xl mb-14">You can use all three parts of DIST's tooling suite to support your end to end reporting process, or pick and choose the parts that help meet your needs.</p>
+        <h3>If you're new to digital sustainability and don't know where to start.</h3>
+        <p class="mb-6">Most organisations start with using the <a href="/taxonomy" class="">taxonomy categories</a> to map out the scope they want to report on. The approach is flexible meaning you can use it to understand things at just an application, product or service level - you don't have to start with your whole organisation's digital estate. You also don't have to attempt to get numbers for every single category, you can skip the parts that you're not ready for and make that clear in any final reporting you do using the <a href="/schema" class="">schema</a>.</p>
+        <h3>You know the categories you want to report on, but aren't sure how to work out the numbers.</h3>
+        <p>DIST's <a href="/methodologies" class="">methodologies map</a> (coming soon) is a carefully curated list of approaches you can use to help you estimate figures for any part of the taxonomy. </p>
+        <h3>You already do environmental impact reporting, but want to standardise how to present it.</h3>
+        <p>The <a href="/schema" class="">schema</a> is there to help you with the final step of making your estimated figures standardised and transparent for others to see. You can use it to make your scope boundaries clear (what you did and didn't include), as well your confidence in your reported numbers.</p>
     </div>
 </div>
 
 <div class="prose mx-auto py-10">
-    <h2>Need help? Get support from the humans behind it.</h2>
-    <p>DIST is a project from the Green Web Foundation with the support of other digital sustainability professionals in our open source community.</p>
-    <p>If you need help getting started with DIST, reach out to us! We can assess your need, and put you in contact with an appropriate group that can help you.</p>
-    <p><a href="https://www.thegreenwebfoundation.org/support-form/">Contact us</a></p>
+    <h2 class="text-4xl leading-[1.3] border-0 mt-10 mb-0">Need help? Get support from the humans behind DIST.</h2>
+    <p>DIST is open-source, community driven and stewarded by <a href="https://www.thegreenwebfoundation.org/">Green Web Foundation</a> with the support of other digital sustainability professionals for public benefit.</p>
+    <p>If you need help with any aspect of DIST, reach out to us! We'll assess your needs in order to put you in contact with an appropriate group that can help you. Please bear in mind that Green Web Foundation is a non-profit organisation working with a limited budget in a difficult climate (no pun intended) - your patience is appreciated and we'll respond to you as quickly as humanly possible.</p>
+    <p class="button"><a href="https://www.thegreenwebfoundation.org/support-form/">Contact us</a></p>
 </div>
+
 
