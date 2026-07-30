@@ -1,7 +1,4 @@
-@layer theme, base, components, utilities;
-
 @import "tailwindcss";
-@import "tailwindcss/preflight.css" layer(base);
 
 @source "./_drafts/**/*.html";
 @source "./_includes/**/*.html";
@@ -144,7 +141,8 @@
         padding-bottom: 1.5rem;
     }
     h3 {
-        font-size: var(--text-2xl);
+        font-size: var(--text-3xl);
+        @apply leading-8;
         border-bottom-width: 1px;
         padding-bottom: 0.5rem;
         margin-bottom: 1rem;
@@ -158,6 +156,40 @@
     }
 }
 
+@layer utilities {
+
+    .container{ };
+
+    .prose{
+        a:hover {
+            @apply no-underline;
+        }
+    }
+
+    .button {
+        @apply inline-block;
+        @apply border;
+        @apply border-orange-700;
+        @apply bg-orange-300;
+        @apply rounded-xl;
+        @apply px-10;
+        @apply py-4;
+
+        a {
+            @apply text-charcoal-900;
+            @apply no-underline;
+            @apply uppercase;
+            @apply text-xl;
+            @apply font-bold;
+        }
+
+        &:hover {
+            @apply bg-orange-100;
+        }
+
+    }
+}
+
 @layer components {
 
     .full-width {
@@ -168,22 +200,12 @@
       @apply mr-[calc(-50vw+6px)];
     }
 
-    .prose {
-        --tw-prose-body: var(--color-neutral-900);
-        --tw-prose-headings: var(--color-neutral-900);
-    }
-
-    .prose code::before,
-    .prose code::after {
-        content: "";
-    }
-
     header.site-header {
       @apply bg-white border-b-2;
       .wrapper {
         @apply container mx-auto px-2 sm:px-4;
         .nav-wrapper {
-          @apply flex flex-wrap sm:flex-nowrap justify-between items-center bg-white mt-6 sm:mb-6 md:justify-start md:space-x-10;
+          @apply flex flex-wrap md:flex-nowrap justify-between items-center bg-white my-3 sm:my-6 sm:mb-6 md:justify-start md:space-x-10;
         }
       }
     }
