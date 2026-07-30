@@ -1,4 +1,4 @@
-<div class="container mx-auto w-full flex pb-4 sm:pb-0 items-center sm:items-end justify-start">
+<div class="container mx-auto w-full flex items-center md:items-end justify-start">
 
   <!-- LOGO -->
   <a class="flex items-center space-x-4 no-underline" aria-label="DIST home" href="/">
@@ -6,12 +6,12 @@
     <span class="text-lg hover:font-bold focus:outline-none focus-visible:ring focus:ring-blue">{{ site.title | escape }}</span>
   </a>
 
-  <button id="menu-button" type="button" class="sm:hidden w-full text-right" aria-expanded="false" aria-label="open menu">
+  <button id="menu-button" type="button" class="md:hidden w-full text-right" aria-expanded="false" aria-label="open menu">
     <svg id="menu-icon" aria-hidden="true" class="size-8 inline-block fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#menu"></use></svg>
     <svg id="close-icon" aria-hidden="true" class="hidden size-8 fill-cambridge-50 hover:fill-cambridge-400"><use href="/assets/images/icons.svg#close"></use></svg>
   </button> 
 
-  <div class="hidden sm:flex items-center justify-end w-full h-[50px] space-x-6">
+  <div class="hidden md:flex items-center justify-end w-full h-[50px] space-x-6">
     {% for item in site.data.navigation %}
       <a href="{{ item.link }}" class="no-underline {% if page.url == item.link %}text-cambridge-100 border-b-4 border-cambridge-400 dark:border-cambridge-600 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
         {{ item.name }}
@@ -21,10 +21,10 @@
 </div>
 
 <!-- MOBILE MENU -->
-<div id="mobile-menu" class="hidden sm:hidden w-full">
-  <nav class="flex flex-col items-end space-y-2 pb-3">
+<div id="mobile-menu" class="hidden md:hidden w-full">
+  <nav class="flex flex-col items-end space-y-3">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" class="block no-underline px-2 {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
+      <a href="{{ item.link }}" class="block no-underline {% if page.url == item.link %}text-cambridge-100 dark:text-cambridge-100{% else %} text-cambridge-100 dark:text-cambridge-300{% endif %} hover:text-cambridge-300 focus:outline-none focus-visible:ring focus:ring-blue">
         {{ item.name }}
       </a>
     {% endfor %}
