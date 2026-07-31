@@ -1,3 +1,7 @@
+- name: Impact dimensions
+  link: /taxonomy/dimensions
+- name: Categories overview
+  link: /taxonomy/categories  
 - name: Upstream Impacts
   link: /taxonomy/upstream
 - name: Operational Impacts
