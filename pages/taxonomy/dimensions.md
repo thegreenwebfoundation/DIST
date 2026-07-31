@@ -1,7 +1,7 @@
 ---
 title: Impact Dimensions
 permalink: "/taxonomy/dimensions"
-layout: taxonomy
+layout: taxonomy-tabs
 ---
 
 
