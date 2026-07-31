@@ -1,10 +1,8 @@
 ---
 title: Operational Emissions
 permalink: taxonomy/operational
-layout: category
+layout: taxonomy-prose
 ---
-
-# Operational Emissions
 
 {% include DIST/categoryLabel.html label="CatO" %}
 {% include DIST/categoryLabel.html label="CatG" %}

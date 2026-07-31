@@ -1,10 +1,8 @@
 ---
 title: Downstream Emissions
 permalink: taxonomy/downstream
-layout: category
+layout: taxonomy-prose
 ---
-
-# Downstream Emissions
 
 {% include DIST/categoryLabel.html label="CatD" %}
 

@@ -1,10 +1,8 @@
 ---
 title: Upstream Impacts
 permalink: taxonomy/upstream
-layout: category
+layout: taxonomy-prose
 ---
-
-# Upstream Impacts
 
 {% include DIST/categoryLabel.html label="CatU" %}
 

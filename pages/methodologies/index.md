@@ -5,6 +5,12 @@ permalink: "/methodologies"
 layout: methodologies
 ---
 
+<header class="page-header">
+    <h1 class="page-heading">{{ page.title | escape }}</h1>
+</header>
+
+  <p class="font-bold text-xl text-orange-700">Find approaches to fill the gaps in your numbers.</p>
+
 A curated list of measurement methodologies to support data production for all categories of the [taxonomy](/taxonomy). We envisage this will be useful for DIST adopters who are looking to understand what methodologies are available to support their measurement and estimation needs aligning to DIST taxonomy categories.
 
 ## Methodologies Map - Coming soon
