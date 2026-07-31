@@ -4,7 +4,6 @@ permalink: "/taxonomy/dimensions"
 layout: taxonomy-tabs
 ---
 
-
   <div class="prose mt-6">
     <p>DIST's default taxonomy is extensible so it can be applied to multiple environmental impact dimensions. We welcome contributions to improve all aspects of this work - see <a href="/get-involved">get involved</a>.</p>
     <p>Use the buttons below to toggle between the default taxonomy and versions tailored to specific  impact dimensions the DIST community have worked on.</p>

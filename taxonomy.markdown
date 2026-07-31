@@ -4,7 +4,6 @@ date: 2026-05-06 10:15:00 Z
 layout: taxonomy-prose
 ---
 
-
 <p class="font-bold text-xl text-orange-700">Ensure nothing important is missed as you consider the scope of your assessment.</p>
 
 <figure class="m-4">
