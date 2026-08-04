@@ -1,6 +1,6 @@
 ---
 title: Taxonomy
-date: 2026-05-06 10:15:00 
+date: 2026-05-06 10:15:00 Z
 permalink: "/taxonomy"
 layout: taxonomy-tabs
 ---
