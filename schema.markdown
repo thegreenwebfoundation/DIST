@@ -1,6 +1,7 @@
 ---
 title: Schema
 date: 2026-05-06 10:15:00 Z
+permalink: "/schema"
 ---
 
 Designed to be the definitive data format for sharing quantified tech impacts. DIST files can be made available to others using [carbon.txt](https://carbontxt.org/).
