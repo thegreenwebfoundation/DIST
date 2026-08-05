@@ -4,6 +4,7 @@ date: 2026-05-06 10:15:00 Z
 permalink: "/taxonomy"
 layout: sidebar-navigation
 sidebar_navigation: taxonomy_categories
+prose: false
 ---
 
 <div class="prose">
