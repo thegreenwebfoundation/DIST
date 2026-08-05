@@ -1,0 +1,13 @@
+- name: Taxonomy
+  link: /taxonomy
+  children:
+  - name: How to use the taxonomy
+    link: /taxonomy/using-it
+  - name: Categories overview
+    link: /taxonomy/categories
+  - name: Upstream Impacts
+    link: /taxonomy/upstream
+  - name: Operational Impacts
+    link: /taxonomy/operational
+  - name: Downstream Impacts
+    link: /taxonomy/downstream

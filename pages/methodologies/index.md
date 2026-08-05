@@ -2,7 +2,8 @@
 title: Methodologies
 date: 2026-05-20 10:15:00 Z
 permalink: "/methodologies"
-layout: methodologies
+layout: sidebar-navigation
+sidebar_navigation: methodology_categories
 ---
 
 <header class="page-header">
@@ -17,7 +18,7 @@ A curated list of measurement methodologies to support data production for all c
 
 The DIST Methodologies Map is currently being developed.
 
-Our plan is to publish a publicly available mapping of methodologies to support measurements or estimates for all categories of the DIST taxonomy - focusing on the carbon impact dimension first. 
+Our plan is to publish a publicly available mapping of methodologies to support measurements or estimates for all categories of the DIST taxonomy - focusing on the carbon impact dimension first.
 
 We are looking for help with compiling our first version of a carbon methodology map. See [contribute](/methodologies/contribute) for more information.
 

@@ -2,7 +2,8 @@
 title: Methodologies - Fields
 date: 2026-05-20 10:15:00 Z
 permalink: "/methodologies/fields"
-layout: methodologies
+layout: sidebar-navigation
+sidebar_navigation: methodology_categories
 ---
 
 ## Methodology fields

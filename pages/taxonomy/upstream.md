@@ -1,7 +1,8 @@
 ---
 title: Upstream Impacts
 permalink: taxonomy/upstream
-layout: taxonomy-prose
+layout: sidebar-navigation
+sidebar_navigation: taxonomy_categories
 ---
 
 {% include DIST/categoryLabel.html label="CatU" %}
@@ -34,11 +35,11 @@ There are three sub-categories to consider:
     <li>Data centre and server hardware</li>
 </ol>
 
-### Employee Hardware 
+### Employee Hardware
 
 {% include DIST/categoryItem.html item="CatUEmployeeHardware" %}
 
-The embodied impacts from laptops, desktops, mobiles, printers, and peripherals used by employees. 
+The embodied impacts from laptops, desktops, mobiles, printers, and peripherals used by employees.
 
 ### Networking Hardware
 
@@ -55,7 +56,7 @@ When considering the upstream impacts of a network, consider the embodied impact
 - Repeaters
 - Cables
 
-### Servers and Storage hardware 
+### Servers and Storage hardware
 
 {% include DIST/categoryItem.html item="CatUServerHardware" %}
 

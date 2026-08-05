@@ -31,3 +31,9 @@ exclude:
 - package.json
 - package-lock.json
 - wrangler.jsonc
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      prose: true

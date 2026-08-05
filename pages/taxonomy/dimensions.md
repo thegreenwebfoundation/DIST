@@ -1,7 +1,9 @@
 ---
 title: How to use the taxonomy
 permalink: "/taxonomy/using-it"
-layout: taxonomy-prose
+layout: sidebar-navigation
+sidebar_navigation: taxonomy_categories
+prose: true
 ---
 
 <p>The taxonomy can be used as a stand-alone tool to support discussion or workshops for organizations getting started with exploring the full spectrum of impacts across digital products. It's also very useful in creating a shared understanding of what is in or out of scope for an assessment.</p>

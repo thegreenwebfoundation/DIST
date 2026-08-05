@@ -1,0 +1,7 @@
+- name: Methodologies
+  link: /methodologies
+  children:
+  - name: Contribute
+    link: /methodologies/contribute
+  - name: Methodology Fields
+    link: /methodologies/fields
