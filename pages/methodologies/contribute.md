@@ -2,7 +2,8 @@
 title: Methodologies - Contribute
 date: 2026-05-24 10:15:00 Z
 permalink: "/methodologies/contribute"
-layout: methodologies
+layout: sidebar-navigation
+sidebar_navigation: methodology_categories
 ---
 
 ## Contribute

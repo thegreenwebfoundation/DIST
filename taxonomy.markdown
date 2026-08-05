@@ -2,7 +2,8 @@
 title: Taxonomy
 date: 2026-05-06 10:15:00 Z
 permalink: "/taxonomy"
-layout: taxonomy-tabs
+layout: sidebar-navigation
+sidebar_navigation: taxonomy_categories
 ---
 
 <div class="prose">
@@ -49,7 +50,7 @@ layout: taxonomy-tabs
     <p>The DIST community are currently working to map the default taxonomy to human health impacts.</p>
     <p>If you would like to contribute, please see the <a href="get-involved/">get involved</a> page.</p>
   </div>
-  {% endtab %}  
+  {% endtab %}
 {% endtabs %}
 </div>
 

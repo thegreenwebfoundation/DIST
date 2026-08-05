@@ -1,7 +1,8 @@
 ---
 title: Operational Emissions
 permalink: taxonomy/operational
-layout: taxonomy-prose
+layout: sidebar-navigation
+sidebar_navigation: taxonomy_categories
 ---
 
 {% include DIST/categoryLabel.html label="CatO" %}
@@ -10,9 +11,9 @@ layout: taxonomy-prose
 
 **This category is about understanding and assessing the impacts arising from operating an organisation's own technology assets.** These impacts are grouped into two sets - direct and indirect impacts - to help distinguish the level of ownership and control an organisation has over the assets.
 
-In direct, there are two main categories - On-Premise (O) and Generator (G) impacts. In the indirect grouping there's the Cloud (C) category. Each category aligns to a different GHG Protocol scope. 
+In direct, there are two main categories - On-Premise (O) and Generator (G) impacts. In the indirect grouping there's the Cloud (C) category. Each category aligns to a different GHG Protocol scope.
 
-Understanding operational impacts allows organisations to quantify, monitor, and benchmark the climate impacts of their technology infrastructure and business operations. It enables setting reduction targets and strategies, and facilitates compliance with current and emerging climate disclosure legislations. 
+Understanding operational impacts allows organisations to quantify, monitor, and benchmark the climate impacts of their technology infrastructure and business operations. It enables setting reduction targets and strategies, and facilitates compliance with current and emerging climate disclosure legislations.
 
 ## Direct Impacts
 
@@ -26,7 +27,7 @@ Category O (On-premise) emissions can be related to GHG Protocol Scope 2. This c
 
 #### Employee Devices
 
-{% include DIST/categoryItem.html item="CatOEmployeeDevices" %}        
+{% include DIST/categoryItem.html item="CatOEmployeeDevices" %}
 
 The impacts from resources consumed by computers (desktops, laptops), monitors, printers, and other devices used by employees.
 
@@ -82,7 +83,7 @@ Data consumed from a supplier's API, that is external to your organisation, is a
 
 {% include DIST/categoryItem.html item="CatCCloud" %}
 
-The impacts associated with cloud platform services like compute, storage, and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region. 
+The impacts associated with cloud platform services like compute, storage, and networking. Services are backed by computing hardware with associated upstream and operational emissions. The proportion of such emissions attributable to an organisation will vary based on service, server instance types, and region.
 
 ### SaaS
 
