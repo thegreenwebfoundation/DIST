@@ -8,6 +8,11 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    prose: true
 email: support@greenweb.org
 description: Digital Impacts Schema and Taxonomy
 domain: dist.greenweb.org
@@ -31,9 +36,3 @@ exclude:
 - package.json
 - package-lock.json
 - wrangler.jsonc
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      prose: true

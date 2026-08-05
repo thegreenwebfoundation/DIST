@@ -3,7 +3,7 @@ title: Schema
 date: 2026-05-06 10:15:00 Z
 permalink: "/schema"
 layout: sidebar-navigation
-sidebar_navigation: "schema_categories"
+sidebar_navigation: schema_categories
 ---
 
 # Schema Overview
