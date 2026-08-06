@@ -1,14 +1,11 @@
 {
-  "$schema": "https://dist.greenweb.org/schemas/dist/v0.0.1.json",
-  "organization": {
+  "schema_version": "0.0.1",
+  "organisation": {
     "name": "Example SaaS Co",
     "description": "Mid-sized SaaS company, 200 employees, hybrid workforce, public cloud infrastructure.",
-    "country": "GBR",
-    "open_corporates_url": "https://opencorporates.com/companies/nl/52191494",
-    "sector": "non_financial_corporation",
-    "industries": ["J62"],
-    "activity_description": "IT and software services",
-    "size": "50-249"
+    "country": "United Kingdom",
+    "sector": "Software and IT Services",
+    "size": "51-250"
   },
   "report": {
     "reporting_unit": "Global Operations",
@@ -16,71 +13,152 @@
       "from": "2025-01-01",
       "to": "2025-12-31"
     },
-    "verification": "independently_verified",
-    "verifier": {
-      "name": "Example Environmental Consultancy LLP",
-      "url": "https://example.com"
-    },
-    "impacts": {
-      "carbon": [
-        {
-          "categories": ["upstream:employee_hardware"],
-          "value": 42000,
-          "unit": "kgCO2e",
-          "methodology_description": "Manufacturer LCA data amortised over device lifespan",
-          "confidence": "medium",
-          "notes": "200 laptops, 180 monitors, peripherals. 4-year refresh for laptops, 6 years for monitors.",
-          "data_sources": ["https://www.apple.com/environment/"]
-        },
-        {
-          "categories": ["upstream:software"],
-          "value": null,
-          "unit": "kgCO2e",
-          "confidence": "low",
-          "notes": "Known gap. No reliable methodology for embodied emissions of commercial software."
-        },
-        {
-          "categories": ["operational:direct:employee_devices"],
-          "value": 3200,
-          "unit": "kgCO2e",
-          "methodology_description": "Metered electricity with UK grid carbon intensity",
-          "confidence": "high",
-          "notes": "2 UK offices, location-based method, DESNZ 2025 conversion factors.",
-          "data_sources": [
-            "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025"
-          ]
-        },
-        {
-          "categories": ["operational:indirect:cloud_services"],
-          "value": 18500,
-          "unit": "kgCO2e",
-          "methodology_description": "Cloud Carbon Footprinting tool",
-          "confidence": "medium",
-          "data_sources": ["https://www.cloudcarbonfootprint.org/"]
-        },
-        {
-          "categories": ["operational:indirect:saas"],
-          "value": 12000,
-          "unit": "kgCO2e",
-          "methodology_description": "Spend-based estimate using EEIO factors",
-          "confidence": "low",
-          "notes": "Approx. 30 SaaS tools. Low confidence: spend-based only."
-        },
-        {
-          "categories": ["downstream:end_user_devices"],
-          "value": 8500,
-          "unit": "kgCO2e",
-          "methodology_description": "User base estimate",
-          "notes": "50,000 MAU, average 45-min daily sessions, estimated device power."
-        },
-        {
-          "categories": ["operational:direct:generators"],
-          "value": 0,
-          "unit": "kgCO2e",
-          "methodology_description": "Out of scope",
-          "notes": "We run none of our own generators."
-        }
-      ]
-    }
+    "reporting_scope": "own_operations",
+    "verification": "self_reported",
+    "disclosures": [
+      {
+        "url": "https://example.com/sustainability/ict-2025-report.pdf",
+        "type": "report",
+        "description": "Annual ICT sustainability report 2025"
+      }
+    ],
+    "impacts": [
+
+      {
+        "dimension": "carbon",
+        "category": "upstream",
+        "subcategory": "employee_hardware",
+        "value": 42000,
+        "unit": "kgCO2e",
+        "methodology_name": "Manufacturer LCA data amortised over device lifespan",
+        "methodology_id": "dist:carbon:manufacturer-lca",
+        "confidence": 85,
+        "notes": "200 laptops, 180 monitors, peripherals. 4-year refresh for laptops, 6 years for monitors.",
+        "data_sources": ["https://www.apple.com/environment/"]
+      },
+      {
+        "dimension": "carbon",
+        "category": "upstream",
+        "subcategory": "software",
+        "value": 0,
+        "unit": "kgCO2e",
+        "confidence": 10,
+        "notes": "Known gap. No reliable methodology for embodied emissions of commercial software."
+      },
+      {
+        "dimension": "carbon",
+        "category": "operational_direct",
+        "subcategory": "employee_devices",
+        "value": 3200,
+        "unit": "kgCO2e",
+        "methodology_name": "Metered electricity with UK grid carbon intensity",
+        "methodology_id": "dist:carbon:metered-grid",
+        "confidence": 90,
+        "notes": "2 UK offices, location-based method, DESNZ 2025 conversion factors.",
+        "data_sources": ["https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025"]
+      },
+      {
+        "dimension": "carbon",
+        "category": "operational_indirect",
+        "subcategory": "cloud_services",
+        "value": 18500,
+        "unit": "kgCO2e",
+        "methodology_name": "Cloud Carbon Footprinting tool",
+        "methodology_id": "dist:carbon:ccf",
+        "confidence": 60,
+        "data_sources": ["https://www.cloudcarbonfootprint.org/"]
+      },
+      {
+        "dimension": "carbon",
+        "category": "operational_indirect",
+        "subcategory": "saas",
+        "value": 12000,
+        "unit": "kgCO2e",
+        "methodology_name": "Spend-based estimate using EEIO factors",
+        "confidence": 25,
+        "notes": "Approx. 30 SaaS tools. Low confidence: spend-based only."
+      },
+      {
+        "dimension": "carbon",
+        "category": "downstream",
+        "subcategory": "end_user_devices",
+        "value": 8500,
+        "unit": "kgCO2e",
+        "methodology_name": "User base estimate",
+        "confidence": 20,
+        "notes": "50,000 MAU, average 45-min daily sessions, estimated device power."
+      },
+
+      {
+        "dimension": "energy",
+        "category": "operational_direct",
+        "value": 14200,
+        "unit": "kWh",
+        "methodology_name": "Metered office IT electricity",
+        "confidence": 90,
+        "notes": "2 UK offices. IT equipment only, excludes HVAC and lighting."
+      },
+      {
+        "dimension": "energy",
+        "category": "operational_indirect",
+        "subcategory": "cloud_services",
+        "value": 82000,
+        "unit": "kWh",
+        "methodology_name": "Cloud Carbon Footprinting energy estimate",
+        "methodology_id": "dist:energy:ccf",
+        "confidence": 55
+      },
+
+      {
+        "dimension": "water",
+        "category": "operational_indirect",
+        "subcategory": "cloud_services",
+        "value": 45000,
+        "unit": "litres",
+        "methodology_name": "Estimated from CSP published WUE",
+        "confidence": 20,
+        "notes": "CSP does not provide customer-specific water data. Rough estimate from published regional WUE."
+      },
+
+      {
+        "dimension": "materials",
+        "category": "upstream",
+        "subcategory": "refurbished_percentage",
+        "value": 35,
+        "unit": "%",
+        "methodology_name": "Procurement records",
+        "confidence": 95,
+        "notes": "70 of 200 laptops purchased refurbished. Monitors all new."
+      },
+      {
+        "dimension": "materials",
+        "category": "operational_direct",
+        "subcategory": "average_device_lifespan",
+        "value": 4.2,
+        "unit": "years",
+        "methodology_name": "Asset register average age at decommission",
+        "confidence": 95
+      },
+      {
+        "dimension": "materials",
+        "category": "downstream",
+        "subcategory": "total_decommissioned_weight",
+        "value": 320,
+        "unit": "kg",
+        "methodology_name": "Weighed at handover to disposal partner",
+        "confidence": 95,
+        "notes": "48 laptops, 12 monitors, assorted peripherals."
+      },
+      {
+        "dimension": "materials",
+        "category": "downstream",
+        "subcategory": "waste_diversion_rate",
+        "value": 86,
+        "unit": "%",
+        "methodology_name": "Disposal records from ITAD partner",
+        "confidence": 85,
+        "notes": "275kg diverted (donated/recycled) of 320kg total. 45kg to unknown destination."
+      }
+    ]
   }
 }

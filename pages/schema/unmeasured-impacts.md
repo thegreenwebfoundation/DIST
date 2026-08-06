@@ -1,8 +1,8 @@
 ---
 title: Schema
-permalink: /schema/unmeasured-impacts
+permalink: "/schema/unmeasured-impacts"
 layout: sidebar-navigation
-sidebar_navigation: "schema_categories"
+sidebar_navigation: schema_categories
 ---
 
 ## Guidance on unmeasured impacts

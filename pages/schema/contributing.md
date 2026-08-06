@@ -1,8 +1,8 @@
 ---
 title: Schema
-permalink: /schema/contributing
+permalink: "/schema/contributing"
 layout: sidebar-navigation
-sidebar_navigation: "schema_categories"
+sidebar_navigation: schema_categories
 ---
 
 ## Contributing to the DIST schema

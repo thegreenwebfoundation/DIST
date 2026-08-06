@@ -1,8 +1,8 @@
 ---
 title: Schema
-permalink: /schema/use-cases
+permalink: "/schema/use-cases"
 layout: sidebar-navigation
-sidebar_navigation: "schema_categories"
+sidebar_navigation: schema_categories
 ---
 
 ## Use Cases for the DIST Schema

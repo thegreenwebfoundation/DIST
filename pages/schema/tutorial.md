@@ -1,8 +1,8 @@
 ---
 title: Schema
-permalink: /schema/tutorial
+permalink: "/schema/tutorial"
 layout: sidebar-navigation
-sidebar_navigation: "schema_categories"
+sidebar_navigation: schema_categories
 ---
 
 ## DIST Schema Tutorial

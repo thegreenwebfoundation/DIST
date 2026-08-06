@@ -1,8 +1,8 @@
 ---
 title: Schema
-permalink: /schema/confidence
+permalink: "/schema/confidence"
 layout: sidebar-navigation
-sidebar_navigation: "schema_categories"
+sidebar_navigation: schema_categories
 ---
 
 ## Guidance on confidence
