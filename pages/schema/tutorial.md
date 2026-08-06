@@ -207,7 +207,7 @@ For example, if an organization had not yet succeeded in measuring their downstr
 {
     "categories": [
         "downstream:end_user_devices",
-        "downstream:network_data_transfer”,
+        "downstream:network_data_transfer",
     ],
     "value": null,
     "unit": "kgCO2e",
