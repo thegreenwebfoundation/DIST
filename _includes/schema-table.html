@@ -1,6 +1,6 @@
 {% assign s = include.schema %}
 
-<section class="schema-doc">
+<section class="schema-table">
   {% if s.title %}<h2>{{ s.title }}</h2>{% endif %}
   {% if s.description %}<p>{{ s.description }}</p>{% endif %}
 
@@ -15,26 +15,46 @@
       <tr>
         <td><code>{{ prop.name }}</code></td>
         <td>
-          <code>{{ prop.type }}</code>
           {% if prop.type == 'array' and prop.items %}
+            <code>{{ prop.type }}</code>
             of <code>{{ prop.items.type }}</code>
+          {% elsif prop.type == "union" %}
+            {% for alternative in prop.alternatives %}
+                <code>{{alternative}}</code> {% unless forloop.last %} or {%endunless %}
+            {% endfor %}
+          {% else %}
+            <code>{{ prop.type }}</code>
           {% endif %}
         </td>
         <td>{% if prop.required %}✓{% endif %}</td>
         <td>
-          {% if prop.description and not ((prop.type =='object' and prop.properties) or (prop.type == 'array' and prop.items.properties)) %}
-            {{ prop.description }}
-            {% if prop.enum or prop.default %}
-              <br />
-            {% endif %}
+          {% if prop.description and prop.type != "object"  %}
+            {{ prop.description|markdownify }}
           {% endif %}
 
           {% if prop.enum %}
             One of:
-            {% for v in prop.enum %}<code>{{ v }}</code>{% unless forloop.last %}, {% endunless %}{% endfor %}
+            {% if prop.enum.size > 5 %}
+            <ul>
+              {% for v in prop.enum %}
+                <li><code>{% if prop.type == "string" %}"{% endif %}{{ v }}{% if prop.type == "string" %}"{% endif%}</code></li>
+              {% endfor %}
+            </ul>
+            {% else %}
+              {% for v in prop.enum %}
+                <code>{% if prop.type == "string" %}"{% endif %}{{ v }}{% if prop.type == "string" %}"{% endif%}</code>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            {% endif %}
             {% if prop.default %}
               <br />
             {% endif %}
+          {% endif %}
+
+          {% if prop.examples %}
+            {% if prop.examples.size <= 1 %}Example{% else %}Examples{% endif %}:
+            {% for v in prop.examples %}
+              <code>{% if prop.type == "string" %}"{% endif %}{{ v }}{% if prop.type == "string" %}"{% endif%}</code>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
           {% endif %}
 
           {% if prop.default %}
@@ -49,12 +69,10 @@
             Items:
             {% include schema-table.html schema=prop.items %}
           {% endif %}
-
           {% if prop.variants %}
-            <em>{{ prop.type }}:</em>
             {% for variant in prop.variants %}
-              <strong>{{ variant.name }}</strong>
-              {% if variant.description %} — {{ variant.description }}{% endif %}
+              <code>{{ variant.name }}</code>
+              {% if variant.description %}: {{ variant.description }}<br />{% endif %}
               {% if variant.properties %}
                 {% include schema-table.html schema=variant %}
               {% endif %}
