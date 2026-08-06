@@ -1,0 +1,15 @@
+- name: Schema
+  link: /schema
+  children:
+  - name: Tutorial
+    link: /schema/tutorial
+  - name: Syntax Reference
+    link: /schema/reference
+  - name: Guidance on confidence
+    link: /schema/confidence
+  - name: Guidance on unmeasured impacts
+    link: /schema/unmeasured-impacts
+  - name: Use Cases
+    link: /schema/use-cases
+  - name: Contributing
+    link: /schema/contributing

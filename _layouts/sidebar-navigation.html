@@ -19,13 +19,13 @@ layout: base
     {% endfor %}
   </aside>
 
-  <article class="md:w-4/5">
+  <article class="{% if page.wide %}w-full{% else %}md:w-4/5{% endif %}">
 
       <header class="page-header">
         <h1 class="page-heading mt-4 mb-8">{{ page.title | escape }}</h1>
       </header>
 
-    <div class="{% if page.prose %}prose{% endif %}">
+    <div class="{% if page.prose %}prose{% endif %} {% if page.wide %}max-w-full{% endif %}">
         {{ content }}
       </div>
   </article>

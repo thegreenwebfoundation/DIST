@@ -6,15 +6,15 @@ layout: sidebar-navigation
 sidebar_navigation: schema_categories
 ---
 
-# Schema Overview
+<p class="font-bold text-xl text-orange-700">Create transparency about your impacts, scope and measurement approaches.</p>
 
 ## Introduction
 
-The DIST Schema is designed to be the definitive data format for sharing quantified technology impacts, through a standardised JSON format, readable by humans and machines.
+The DIST Schema is a  JSON data format for sharing quantified digital technology impacts. It provides a way to present the numbers you produce into a single JSON file, along with more context about your organization, scope boundaries, methods used and confidence ratings. This helps you provide transparency about the nuances of your reported numbers so others can make sense of them.
 
-DIST files can be publicised and made available to others using [carbon.txt](https://carbontxt.org/), to ensure that they are transparent and findable.
+The schema is metrics-focused, in that it works best on impact dimensions which can be measured quantitatively using a clearly defined unit. The JSON format follows the [taxonomy](/taxonomy) categories of upstream, operational and downstream impacts, and the sub-categories therein.  The schema is open source, and we welcome feedback and contributions to improve it from practitioners in the community.
 
-The schema is metrics-focused - it focuses on impacts which can be measured quantitatively. It is designed around the [DIST taxonomy](/taxonomy) - impacts are reported and broken down against individual taxonomy categories. The schema is open source, and aligned with existing best practices including Life Cycle Assessment (LCA).
+DIST is fully compatible with the [carbon.txt](https://www.carbontxt.org) standard. We recommend that your completed DIST file is published on your website  and linked to from a carbon.txt file to ensure it’s easily findable by others.
 
 ## The DIST schema IS:
 
@@ -35,9 +35,11 @@ The DIST schema is designed to do one specific job well -  reporting impact metr
 
 ## Getting Started
 
-The best place to get started with the DIST schema is with the [tutorial](/schema/tutorial), which runs you through the process of creating a DIST file, and introduces the structure and content of a DIST file.
+The best place to get started with the DIST schema is with the [tutorial](/schema/tutorial), which runs you through the process of creating a DIST file, and introduces its structure and content.
 
-The Documentation contains a complete [syntax reference](/schema/reference), as well as more detailed specifications on how DIST [models confidence](/schema/confidence), and how it treats [unmeasured impacts](/schema/unmeasured-impacts).
+<p class="button"> <a href="/schema/tutorial">Go to the tutorial!</a></p>
+
+The documentation contains a complete [syntax reference](/schema/reference), as well as more detailed specifications on how DIST [models confidence](/schema/confidence), and how it treats [unmeasured impacts](/schema/unmeasured-impacts).
 
 The [Use cases](/schema/use-cases) section describes how the DIST schema might can be used in products, services, data analysis and broader reporting processes.
 
