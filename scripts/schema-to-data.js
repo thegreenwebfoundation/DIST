@@ -16,6 +16,7 @@ function processProperty(name, prop, required = []) {
     required: required.includes(name),
     description: prop.description || '',
     default: prop.default ?? null,
+    examples: prop.examples ?? null,
     enum: prop.enum || null,
     properties: null,
     variants: null,
@@ -38,6 +39,7 @@ function processProperty(name, prop, required = []) {
       items: items.properties
         ? { type: 'object', properties: processSchema(items) }
         : { type: items.type || 'any' },
+      enum: items.enum,
     };
 
   } else if (combiner) {
@@ -45,13 +47,15 @@ function processProperty(name, prop, required = []) {
       ...base,
       type: combiner,
       variants: prop[combiner].map((variant, i) => ({
-        name: variant.title || `Option ${i + 1}`,
+        name: variant.const,
         description: variant.description || '',
         type: variant.type || 'object',
         properties: variant.properties ? processSchema(variant) : null,
       })),
     };
 
+  } else if (prop.type && prop.type.constructor === Array) {
+    return { ...base, type: "union", alternatives: prop.type };
   } else if (prop.type && prop.type != 'object') {
     return { ...base, type: prop.type };
 

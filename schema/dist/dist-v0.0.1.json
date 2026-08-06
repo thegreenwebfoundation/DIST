@@ -18,25 +18,31 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "Name of the reporting organization."
+          "description": "Name of the reporting organization.",
+          "examples": ["The Green Web Foundation"]
         },
         "description": {
           "type": "string",
-          "description": "Brief description of the organization and its technology estate."
+          "description": "Brief description of the organization, it's purpose and role, and  its technology estate.",
+          "examples": [
+            "The Green Web Foundation is a non-profit organization working towards a fossil-free internet by 2030."
+          ]
         },
         "open_corporates_url": {
           "type": "string",
           "format": "uri",
-          "description": "Open Corporates URL for the reporting organization, providing a verifiable corporate identity (e.g. 'https://opencorporates.com/companies/gb/12345678')."
+          "description": "Open Corporates URL for the reporting organization, providing a verifiable corporate identity.",
+          "examples": ["https://opencorporates.com/companies/gb/12345678"]
         },
         "country": {
           "type": "string",
-          "description": "A valid 2-digit ISO 3166 alpha-2 country code for the country of registration of this organization",
-          "pattern": "^[A-Z]{2}$"
+          "description": "A valid [3-digit ISO 3166 alpha-3 country code](https://www.iso.org/obp/ui/#search) for the country of registration of this organization",
+          "pattern": "^[A-Z]{3}$",
+          "examples": ["GBR", "NLD", "ESP"]
         },
         "sector": {
           "type": "string",
-          "description": "Primary sector, according to the SNA 2008 / ESA 2010 standard categories for national accounting.",
+          "description": "Primary sector, according to the [SNA 2008](https://unstats.un.org/unsd/nationalaccount/sna.asp) / [ESA 2010](https://ec.europa.eu/eurostat/web/esa-2010) standard categories for national accounting.",
           "enum": [
             "non_financial_corporation",
             "financial_corporation",
@@ -47,20 +53,27 @@
         },
         "industries": {
           "type": "array",
-          "description": "Industrial sector according to the ISICv5 / NACE categories.",
+          "description": "Industrial sector according to the [ISICv5](https://unstats.un.org/unsd/classifications/Econ/isic) / [NACE](https://ec.europa.eu/eurostat/web/nace) categories. These can be a general section e.g. `\"K\"` (Telecommunications, computer programming, consultancy, computing infrastructure, and other information service activities), a division within that section, e.g. `\"K62\"` (Computer programming, consultancy and related activities), or a more specific class within that division, e.g. `\"K6211\"` (Development of video games, video game software, and video game software tools). The full classification is available at the ISIC link above.",
           "minItems": 1,
           "items": {
-            "$ref": "#/$defs/industry"
-          }
+            "type": "string",
+            "pattern": "^[A-U][0-9]{2,4}$|^[A-U]$"
+          },
+          "examples": ["A", "B01", "C104", "D3530", "K", "K62", "K6211"]
         },
         "activity_description": {
           "type": "string",
-          "description": "Text description"
+          "description": "A text description of the activities the organization carries out. This may supplement the \"sector\" and \"industries\" fields with additional details,, or be used instead of them.",
+          "examples": [
+            "Technology development, policy analysis and advocacy",
+            "Development of web applications and services",
+            "Provision of cloud services"
+          ]
         },
         "size": {
           "type": "string",
           "enum": ["0-9", "10-19", "20-49", "50-249", "250+"],
-          "description": "Employee count range, based on Eurostat employment size classes."
+          "description": "Employee count range, based on [Eurostat employment size classes](https://ec.europa.eu/eurostat/databrowser/view/SBS_SC_IND_R2/default/table?lang=en)."
         }
       },
       "required": ["name"]
@@ -72,21 +85,31 @@
       "properties": {
         "reporting_unit": {
           "type": "string",
-          "description": "Organisational unit this report covers (e.g. 'Global Operations', 'Cloud Platform', 'Product X')."
+          "description": "Organisational unit this report covers.",
+          "examples": ["Global Operations", "Cloud Platform", "Product X"]
         },
         "reporting_period": {
           "type": "object",
+          "description": "The period over which impacts were measured or estimated, as ISO8601 format dates (YYYY-MM-DD).",
           "additionalProperties": false,
           "properties": {
-            "from": { "type": "string", "format": "date" },
-            "to": { "type": "string", "format": "date" }
+            "from": {
+              "type": "string",
+              "format": "date",
+              "examples": ["2026-01-01"]
+            },
+            "to": {
+              "type": "string",
+              "format": "date",
+              "examples": ["2026-12-31"]
+            }
           },
           "required": ["from", "to"]
         },
         "verification": {
           "type": "string",
           "enum": ["self_reported", "peer_reviewed", "independently_verified"],
-          "description": "Level of verification applied to this report."
+          "description": "The level of verification applied to this report: `self_reported` if no independent verification has been carried out, `peer_reviewed` if the figures and methodology have been verified by independent, informal peer review, or `independently verified` if the impacts have been formally audited, validated, or certified by a third party."
         },
         "verifier": {
           "type": "object",
@@ -111,7 +134,7 @@
           "properties": {
             "carbon": {
               "type": "array",
-              "description": "Array of individual co2e impact measurements. Each entry reports a single quantifiable impact. Report at whatever granularity you have data for. The absence of a category does not imply that the impact of that category is 0, but that not measurement is available. Categories with a 0 impact should be explicitly listed",
+              "description": "Array of individual co2e impact measurements. Each entry reports a single quantifiable impact. Report at whatever granularity you have data for. The absence of a category does not imply that the impact of that category is 0, but that no measurement is available. Categories with a 0 impact should be explicitly listed",
               "items": {
                 "$ref": "#/$defs/impact"
               }
@@ -131,19 +154,35 @@
       "properties": {
         "categories": {
           "type": "array",
-          "description": "Array of category identiers from the DIST taxonomy.",
+          "description": "Array of category identiers from the [DIST taxonomy](https://dist.greenweb.org/taxonomy).",
           "minItems": 1,
           "items": {
-            "$ref": "#/$defs/category"
+            "type": "string",
+            "enum": [
+              "upstream:software",
+              "upstream:employee_hardware",
+              "upstream:network_hardware",
+              "upstream:server_and_storage_hardware",
+              "upstream:content_and_data",
+              "operational:direct:employee_devices",
+              "operational:direct:networking",
+              "operational:direct:servers_and_storage",
+              "operational:direct:generators",
+              "operational:indirect:cloud_services",
+              "operational:indirect:saas",
+              "operational:indirect:managed_services",
+              "downstream:end_user_devices",
+              "downstream:network_data_transfer"
+            ]
           }
         },
         "value": {
           "type": ["number", "null"],
-          "description": "The measured or estimated impact value. An explicit 'null' here indidates that an impact exists, but could not be measured, and therefore should be interpreted as 'unknown', rather than 'zero'."
+          "description": "The measured or estimated impact value. An explicit `null` here indidates that an impact exists, but could not be measured, and therefore should be interpreted as 'unknown', rather than 'zero'."
         },
         "unit": {
           "type": "string",
-          "description": "Unit of measurement. Should be spelled out clearly (e.g. 'kgCO2e', 'kWh', 'litres', 'm3', 'kg', 'hectares', 'years'). Defined by the methodology but stated here for transparency.",
+          "description": "The unit of measurement of the value.",
           "examples": [
             "kgCO2e",
             "kWh",
@@ -156,24 +195,29 @@
         },
         "methodology_description": {
           "type": "string",
-          "description": "Human-readable description of the methodology used to calculate this value (e.g. 'Cloud Carbon Footprinting tool', 'Manufacturer LCA data', 'WRI Aqueduct water stress assessment')."
+          "description": "Human-readable description of the methodology used to calculate this value.",
+          "examples": [
+            "Cloud Carbon Footprinting tool",
+            "Manufacturer LCA data",
+            "WRI Aqueduct water stress assessment"
+          ]
         },
         "confidence": {
           "anyOf": [
             {
               "const": "high",
-              "description": "\"high\": Calculations that use real, device-specific primary data (manufacturer Product Carbon Footprint datasheets, actual billing or usage data) with clear, documented methodology count as high confidence numbers."
+              "description": "Calculations that use real, device-specific primary data (manufacturer Product Carbon Footprint datasheets, actual usage data) with a clear, documented methodology count as high confidence numbers."
             },
             {
               "const": "medium",
-              "description": "\"medium\": If “high” is referring to specific products, primary data, and independent verification or peer review, you can think of \"medium\" as following similar principles but where at least one generalisation has had to have been applied."
+              "description": "Medium confidence measurements also follow a documented methodology, and make clear any assumptions which go into their calculation, but may rely on generalisations or estimates where real product-level data is unavailable."
             },
             {
               "const": "low",
-              "description": "\"low\": Finally \"low\" confidence calculations involve model-on-model stacking, very uncertain activity data, or proxies used to substitute for a different provider entirely."
+              "description": "Low confidence measurements are those which result from larger assumptions or estimates, or from a less robust methodology. This might include stacking models (using one estimate as input to another estimation model), using very uncertain sources of data, or using proxies - taking data from one provider as an estimate for the impact of another."
             }
           ],
-          "description": "Confidence in the reported value, this can be classified as low, medium, or high, depending on the specific methodology used, following the guidelines at https://dist.greenweb.org/schema/confidence."
+          "description": "Confidence in the reported value, this can be classified as low, medium, or high, depending on the specific methodology used, following the [guidelines on confidence](https://dist.greenweb.org/schema/confidence)."
         },
         "notes": {
           "type": "string",
@@ -186,32 +230,6 @@
         }
       },
       "required": ["categories", "value", "unit"]
-    },
-    "category": {
-      "type": "string",
-      "description": "An impact category from the DIST taxonomy: https://dist.greenweb.org/taxonomy",
-      "enum": [
-        "upstream:software",
-        "upstream:employee_hardware",
-        "upstream:network_hardware",
-        "upstream:server_and_storage_hardware",
-        "upstream:content_and_data",
-        "operational:direct:employee_devices",
-        "operational:direct:networking",
-        "operational:direct:servers_and_storage",
-        "operational:direct:generators",
-        "operational:indirect:cloud_services",
-        "operational:indirect:saas",
-        "operational:indirect:managed_services",
-        "downstream:end_user_devices",
-        "downstream:network_data_transfer"
-      ]
-    },
-    "industry": {
-      "type": "string",
-      "description": "An industrial sector, from the ISICv5 / NACE taxonomy ",
-      "pattern": "^[A-U][0-9]{2,4}$|^[A-U]$",
-      "examples": ["A", "B01", "C104", "D3530"]
     }
   }
 }

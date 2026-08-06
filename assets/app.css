@@ -84,7 +84,7 @@
     --color-charcoal-800: #454545;
     --color-charcoal-900: #3d3d3d;
     --color-charcoal-950: #252525;
-    --color-charcoal: #252525;    
+    --color-charcoal: #252525;
 
     --font-sans: "TWKEverett", sans-serif;
     --font-serif: "TWKEverett", serif;
@@ -163,6 +163,10 @@
     .prose{
         a:hover {
             @apply no-underline;
+        }
+
+        code:before, code:after {
+          content: "" !important;
         }
     }
 
@@ -296,7 +300,7 @@
         animation: fadein 0.5s, fadeout 0.5s 2.5s;
     }
 
-    div[class$="-box"] { 
+    div[class$="-box"] {
       @apply border;
       @apply rounded-xl;
       @apply p-4;
@@ -310,7 +314,7 @@
     .warning-box {
       @apply border-orange;
       @apply bg-orange-100;
-    }    
+    }
 
 }
 
@@ -351,6 +355,23 @@
   @apply mb-3;
 }
 
+.schema-table td {
+  @apply pt-2;
+  @apply pb-2;
+}
+
+.schema-table td p {
+  @apply mt-0;
+  @apply mb-2;
+}
+
+.schema-table td p:last-child {
+  @apply mb-0;
+}
+
+.prose .schema-table td li {
+  @apply my-0;
+}
 
 /* CATEGORY U */
 .cat-u {

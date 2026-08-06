@@ -3,7 +3,8 @@
     "deploy": "./scripts/build.sh && wrangler deploy",
     "preview": "./scripts/build.sh && wrangler dev",
     "schema-lint": "npx prettier --write schema/dist/*",
-    "schema-validate-example": "npx z-schema schema/dist/dist-v0.0.1.json schema/dist/dist-example-v0.0.1.json"
+    "schema-validate-example": "npx z-schema schema/dist/dist-v0.0.1.json schema/dist/dist-example-v0.0.1.json",
+    "schema-generate-table": "node scripts/schema-to-data.js schema/dist/dist-v0.0.1.json _data/generated/schema.json"
   },
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^15.4.0",

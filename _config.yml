@@ -30,7 +30,6 @@ exclude:
 - functions/
 - node_modules/
 - scripts/
-- schema/
 - Gemfile
 - Gemfile.lock
 - package.json
