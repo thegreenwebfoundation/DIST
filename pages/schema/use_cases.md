@@ -1,12 +1,11 @@
 ---
-title: Schema - Use cases
+title: Schema
 permalink: /schema/use-cases
 layout: sidebar-navigation
 sidebar_navigation: "schema_categories"
 ---
 
-
-# Use Cases for the DIST Schema
+## Use Cases for the DIST Schema
 
 DIST is intended to support a variety of use cases in responsible technology procurement and sustainability reporting. Publishing your impact measurements in the DIST format enables you to:
 

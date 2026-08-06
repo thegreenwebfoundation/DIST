@@ -135,7 +135,7 @@ The report section also contains an `impacts` object, which is broken down by **
     Currently DIST only supports <code>carbon</code> emissions as a reportable impact, but further versions will include additional dimensions such as water, human health and land use, as the methodologies to quantify these impacts develop.
 </div>
 
-Each impact dimension contains a list of impacts related to particular [taxonomoy categories](/taxonomy), all of which have the following structure.
+Each impact dimension contains a list of impacts related to particular [taxonomy categories](/taxonomy), all of which have the following structure.
 
 At a minimum, an impact needs a numerical `value` in a particular `unit`, associated with one or more `categories` from the [DIST taxonomy](/taxonomy):
 
@@ -168,7 +168,7 @@ Impacts may contain a number of optional additional fields, which give additiona
 {% endraw %}
 {% endhighlight %}
 
-As before, for more information on each of these fields, their purpose, and the possible values they can take, please see the [syntax reference](/schema/reference), and for more information on the `confidence` field in particular, the [guidance note on confidence](/syntax/confidence).
+As before, for more information on each of these fields, their purpose, and the possible values they can take, please see the [syntax reference](/schema/reference), and for more information on the `confidence` field in particular, the [guidance note on confidence](/schema/confidence).
 
 #### Reporting an impact across multiple categories
 
