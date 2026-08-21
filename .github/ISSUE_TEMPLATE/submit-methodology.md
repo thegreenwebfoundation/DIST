@@ -79,7 +79,7 @@ To propose a new methodology for addition to the [DIST Methodologies Map](https:
 - [ ] Health
 
 14. DIST categories (select at least one)
-*One or more DIST taxonomy categories to which this methodology can be applied to.*
+*One or more DIST taxonomy categories to which this methodology can be applied to. See https://dist.greenweb.org/taxonomy*
 
 - [ ] **CatUSoftware**: Off The Shelf including AI models
 - [ ] **CatUEmployeeHardware**: Employee Hardware
@@ -95,7 +95,6 @@ To propose a new methodology for addition to the [DIST Methodologies Map](https:
 - [ ] **CatCManaged**: Managed Services
 - [ ] **CatDEndUserDevices**: End-User Devices
 - [ ] **CatDNetworkDataTransfer**: Network Data Transfer
-- [ ] **CatDInfrastructure**: Downstream Infrastructure
 
 15. Carbon intensity type (select one)
 *(Carbon impact dimension only) Specify whether this methodology relies on average or marginal emissions.*
