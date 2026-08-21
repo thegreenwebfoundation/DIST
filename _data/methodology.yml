@@ -100,8 +100,6 @@
           title: End-User Devices
         - id: CatDNetworkDataTransfer
           title: Network Data Transfer
-        - id: CatDInfrastructure
-          title: Downstream Infrastructure
       required: true
       example: "- CatUSoftware\n\n- CatDEndUserDevices"
     - name: Carbon intensity type
