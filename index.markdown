@@ -63,7 +63,7 @@ layout: home
 </div>
 
 <div class="full-width bg-green-100">
-    <div class="container prose mx-auto py-10">
+    <div class="container prose mx-auto py-10 pb-20">
         <h2 class="text-4xl leading-[1.3] border-0 mt-10 mb-0">DIST meets you where you are.</h2>
         <p class="text-xl mb-14">You can use all three parts of DIST's tooling suite to support your end to end reporting process, or pick and choose the parts that help meet your needs.</p>
         <h3>If you're new to digital sustainability and don't know where to start.</h3>
