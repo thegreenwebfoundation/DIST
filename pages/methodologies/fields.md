@@ -1,12 +1,10 @@
 ---
-title: Methodologies - Fields
+title: Map fields
 date: 2026-05-20 10:15:00 Z
 permalink: "/methodologies/fields"
 layout: sidebar-navigation
 sidebar_navigation: methodology_categories
 ---
-
-## Methodology fields
 
 The table below illustrates the fields that are represented in the DIST Methodologies Map.
 

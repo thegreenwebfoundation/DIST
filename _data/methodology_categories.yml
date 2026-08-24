@@ -1,7 +1,7 @@
-- name: Methodologies
+- name: Methodologies map
   link: /methodologies
   children:
   - name: Contribute
     link: /methodologies/contribute
-  - name: Methodology Fields
+  - name: Map fields
     link: /methodologies/fields
