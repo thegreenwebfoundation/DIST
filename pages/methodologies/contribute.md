@@ -21,11 +21,17 @@ There's several advantages to being included:
 
 ### When should I submit?
 
+You can submit at any time. This is an open process for community contributions.
+
+<div class="full-width bg-blue-100">
+
 **If you would like to be included in our first carbon methodology map, launching at [GreenIO London 2026](https://greenio.tech/conference/22/london-2026-september), you have until Thurs 17th September 2026 to get your submission to us.** Submitting by this date will leave us with enough time to review and if necessary follow up with any questions we might have. 
+
+</div>
 
 ### How do I submit my methodology?
 
-You can submit via two routes:
+We estimate submitting a methodology will take you about 15 minutes. You can submit via two routes:
 
 <div class="grid gap-x-10 gap-y-6 sm:grid-cols-2 sm:grid-flow-col sm:auto-rows-auto mt-3 mb-16">
   <div>
@@ -46,12 +52,13 @@ You can submit via two routes:
 
 Sorry, but we don't. If you are working with methodologies you think should be included in the map, but aren't directly involved, the most helpful thing you can do is get in contact with the methodology owner and ask them to submit it to us themselves. We want to ensure the methodologies listed in the map are maintained over time, and our experience stewarding the [Green Web Dataset](https://www.thegreenwebfoundation.org/tools/green-web-dataset/) has taught us that in order to do that we need to be in direct contact with those owning the things we list.
 
-### What are the contribution guidelines?
+### How do I know if my methodology is suitable?
 
 For a methodology to be considered for inclusion in the DIST Methodologies Map, it must be:
 
-- Relevant to an existing [DIST impact dimensions](/taxonomy#dimensions) - for now that's just carbon.
+- Relevant to an existing [DIST impact dimensions](/taxonomy#dimensions).
 - Relevant to at least one existing [DIST taxonomy category](/taxonomy#categories).
+- The methodology produces a single output in a standard measurement unit.
 - Complete and include information for all of the fields marked as required in the "Methodology fields" table below.
 - Available through an online, accessible URL - we accept closed source methodologies, but you must have at least a marketing page.
 
