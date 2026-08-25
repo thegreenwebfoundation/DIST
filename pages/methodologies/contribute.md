@@ -23,11 +23,7 @@ There's several advantages to being included:
 
 You can submit at any time. This is an open process for community contributions.
 
-<div class="full-width bg-blue-100">
-
 **If you would like to be included in our first carbon methodology map, launching at [GreenIO London 2026](https://greenio.tech/conference/22/london-2026-september), you have until Thurs 17th September 2026 to get your submission to us.** Submitting by this date will leave us with enough time to review and if necessary follow up with any questions we might have. 
-
-</div>
 
 ### How do I submit my methodology?
 
