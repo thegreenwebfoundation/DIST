@@ -1,17 +1,22 @@
 {% assign title = include.title | false %}
 
 <div class="prose mt-4">
-  <p class="">DIST's taxonomy groups impacts into three key categories:</p>
+  <p class="">DIST's taxonomy groups impacts into three high-level categories, aligned to digital's whole lifecycle. Within each high-level category, you will find several sub-categories.</p>
+  <p class="">Start by exploring the high-level categories below:</p>
 </div>
 
 <div class="grid gap-x-10 gap-y-6 sm:grid-cols-3 sm:grid-rows-[repeat(3,minmax(0,auto))] sm:grid-flow-col sm:auto-rows-auto mt-10 mb-16">
   <div class=""><h3 class="text-xl mb-0 border-blue border-b-2">1. Upstream Impacts</h3></div>
-  <div class="">{{ site.data.taxonomy.CatU.description }}</div>
+  <div class="prose"><p>{{ site.data.taxonomy.CatU.description }}</p>
+      <p>Has five sub-categories.</p>
+  </div>
   <div class=""><a href="/taxonomy/upstream">Read more.</a></div>
   <div class=""><h3 class="text-xl mb-0 border-purple border-b-2">2. Operational Impacts</h3></div>
-  <div class="">{{ site.data.taxonomy.OperationalEmissions.description }}</div>
+  <div class="prose"><p>{{ site.data.taxonomy.OperationalEmissions.description }}</p>
+      <p>Has seven sub-categories.</p></div>
   <div class=""><a href="/taxonomy/operational">Read more.</a></div>
   <div class=""><h3 class="text-xl mb-0 border-orange border-b-2">3. Downstream Impacts</h3></div>
-  <div class="">{{ site.data.taxonomy.CatD.description }}</div>
+  <div class="prose"><p>{{ site.data.taxonomy.CatD.description }}</p>
+      <p>Has two sub-categories.</p></div>
   <div class=""><a href="/taxonomy/downstream">Read more.</a></div>
 </div>
