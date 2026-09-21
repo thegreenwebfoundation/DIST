@@ -6,11 +6,13 @@ layout: sidebar-navigation
 sidebar_navigation: methodology_categories
 ---
 
-<p class="font-bold text-xl text-orange-700">Find approaches to fill the gaps in your numbers.</p>
+<p class="font-bold text-xl text-orange-700">Find methods to fill the gaps in your numbers.</p>
 
-A curated list of measurement methodologies to support data production, filterable by all categories of the DIST [taxonomy](/taxonomy). It's useful for DIST adopters who are looking to understand what's out there to support their measurement and estimation needs.
+A curated list of measurement methods* filterable by all categories of the DIST [taxonomy](/taxonomy). It's useful for those looking to understand what's out there to support their measurement and estimation needs.
 
-## Methodologies Map
+*\* Think of methods as a broad term covering a range of approaches such as calculation procedures, formulas, datasets, estimation tools and resources - anything that helps you produce numbers for a taxonomy category*. 
+
+## The Methodologies Map
 
 The interactive Methodologies Map below can help 
 
@@ -32,9 +34,9 @@ The interactive Methodologies Map below can help
 
 ## Contribute
 
-**Do you own or work on a methodology that helps people estimate the impact from their digital tech? We would like to hear from you.**
+**Do you own or work on a methods that help people estimate the impact from their digital tech? We would like to hear from you.**
 
-<p class="button"><a href="/methodologies/contribute">Contribute your methodology</a></p>
+<p class="button"><a href="/methodologies/contribute">Contribute your method</a></p>
 
 Alternatively, to track progress, or get involved in the shaping of the vision and implementation of this section of DIST, take a look at the [issues we are working on in gtihub](https://github.com/thegreenwebfoundation/DIST/issues?q=state%3Aopen%20label%3A%22Methodologies%20map%22).
 
