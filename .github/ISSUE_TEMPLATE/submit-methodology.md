@@ -11,7 +11,7 @@ assignees: fershad
 To propose a new methodology for addition to the [DIST Methodologies Map](https://dist.greenweb.org/methodologies) please submit responses for all the questions **not marked as [OPTIONAL]** listed below.
 
 > [!NOTE]
-> All submissions should adhere to the contribution guidelines outlined in [CONTRIBUTING.md](https://github.com/thegreenwebfoundation/DIST/CONTRIBUTING.md).
+> All submissions should adhere to the contribution guidelines outlined in [CONTRIBUTING.md](https://github.com/thegreenwebfoundation/DIST/blob/main/CONTRIBUTING.md).
 
 # Add new methodology
 
