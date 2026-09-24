@@ -43,7 +43,10 @@ layout: home
         <p>Curated list of available measurement and estimation methods across all categories of the taxonomy - find approaches to fill the gaps in your numbers.</p>
     </div>
     <div>
-        <p class="mt-12 p-4 text-2xl border-t-2 border-b-2">Coming soon</p>
+        <figure class="m-4 text-center">
+         <img src="/assets/images/DIST-methodologies-map-v001-400px.jpg" width="400px" class="ml-auto mr-auto" alt="Screenshot of the DIST methodologies map" />
+            <figcaption class="text-charcoal-600 italic pt-2">A screenshot of the DIST methodologies map.</figcaption>
+        </figure>
     </div>
     <div class="mb-6"><a href="/methodologies" class="font-bold">Visit methodologies map overview →</a></div>
     <div class="">
@@ -69,7 +72,7 @@ layout: home
         <h3>If you're new to digital sustainability and don't know where to start.</h3>
         <p class="mb-6">Most organisations start with using the <a href="/taxonomy" class="">taxonomy categories</a> to map out the scope they want to report on. The approach is flexible meaning you can use it to understand things at just an application, product or service level - you don't have to start with your whole organisation's digital estate. You also don't have to attempt to get numbers for every single category, you can skip the parts that you're not ready for and make that clear in any final reporting you do using the <a href="/schema" class="">schema</a>.</p>
         <h3>You know the categories you want to report on, but aren't sure how to work out the numbers.</h3>
-        <p>DIST's <a href="/methodologies" class="">methodologies map</a> (coming soon) is a carefully curated list of approaches you can use to help you estimate figures for any part of the taxonomy. </p>
+        <p>DIST's <a href="/methodologies" class="">methodologies map</a> is a carefully curated list of methods you can use to help you estimate figures for any part of the taxonomy. </p>
         <h3>You already do environmental impact reporting, but want to standardise how to present it.</h3>
         <p>The <a href="/schema" class="">schema</a> is there to help you with the final step of making your estimated figures standardised and transparent for others to see. You can use it to make your scope boundaries clear (what you did and didn't include), as well your confidence in your reported numbers.</p>
     </div>
@@ -78,7 +81,7 @@ layout: home
 <div class="prose mx-auto py-10">
     <h2 class="text-4xl leading-[1.3] border-0 mt-10 mb-0">Need help? Get support from the humans behind DIST.</h2>
     <p>DIST is open-source, community driven and stewarded by <a href="https://www.thegreenwebfoundation.org/">Green Web Foundation</a> with the support of other digital sustainability professionals for public benefit.</p>
-    <p>If you need help with any aspect of DIST, reach out to us! We'll assess your needs in order to put you in contact with an appropriate group that can help you. Please bear in mind that Green Web Foundation is a non-profit organisation working with a limited budget in a difficult climate (no pun intended) - your patience is appreciated and we'll respond to you as quickly as humanly possible.</p>
+    <p>If you need help with any aspect of DIST, reach out to us! We'll assess your needs in order to put you in contact with an appropriate group that can help you. Please bear in mind that Green Web Foundation is a non-profit organisation working with a limited budget in a difficult climate (yes, pun intended) - your patience is appreciated and we'll respond to you as quickly as humanly possible.</p>
     <p class="button"><a href="https://www.thegreenwebfoundation.org/support-form/">Contact us</a></p>
 </div>
 
