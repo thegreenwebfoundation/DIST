@@ -1,7 +1,7 @@
 {% assign dimension = include.dimension | "default" %}
 
 <!-- DIST taxonomy visual overview -->
-<header class="flex flex-col lg:flex-row justify-between leading-tight lg:items-center py-4 px-4 gap-2 lg:gap-0 bg-white dark:bg-black/30">
+<header class="flex flex-col xl:flex-row justify-between leading-tight xl:items-center py-4 px-4 gap-2 xl:gap-0 bg-white dark:bg-black/30">
   
   {% include DIST/taxonomy-title.html dimension=dimension %}
   
@@ -27,10 +27,10 @@
   </div>
 </header>
 
-<div class="flex flex-col lg:flex-row not-prose">
+<div class="flex flex-col xl:flex-row not-prose">
 
   <!-- UPSTREAM -->
-  <div class="flex flex-col lg:w-1/4">
+  <div class="flex flex-col xl:w-1/4">
     <div class="flex">
       <div class="grow flex flex-col justify-center h-[4rem] px-2 py-2 cat-u">
         <div class="relative">
@@ -41,9 +41,9 @@
         </div>
       </div>
       <!-- ARROW RIGHT: hidden on smaller screens -->
-      <div class="hidden lg:block w-0 h-0 z-10 cat-u-arrow-right"></div>
+      <div class="hidden xl:block w-0 h-0 z-10 cat-u-arrow-right"></div>
     </div>
-    <div class="h-full text-sm lg:mr-[2rem] px-4 pt-4 pb-2 cat-u-body">
+    <div class="h-full text-sm xl:mr-[2rem] px-4 pt-4 pb-2 cat-u-body">
       <p class="my-4">{{ site.data.taxonomy.CatU.description }}</p>
 
       <h4 class="mt-8 mb-2 text-lg font-medium">Software</h4>
@@ -61,22 +61,22 @@
 
     </div>
     <!-- ARROW DOWN: visible on smaller screens -->
-    <div class="w-full lg:hidden h-0 cat-u-arrow-down"></div>
+    <div class="w-full xl:hidden h-0 cat-u-arrow-down"></div>
   </div>
 
   <!-- OPERATIONAL -->
-  <div class="flex flex-col lg:w-2/4">
+  <div class="flex flex-col xl:w-2/4">
     <div class="flex">
-      <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 cat-o">
-        <h3 class="lg:pl-[3rem] pb-0 mb-0 text-xl font-medium border-none"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/taxonomy/operational">Operational Impacts</a></h3>
+      <div class="grow flex flex-col justify-center h-[4rem] xl:-ml-[2rem] px-2 py-2 cat-o">
+        <h3 class="xl:pl-[3rem] pb-0 mb-0 text-xl font-medium border-none"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/taxonomy/operational">Operational Impacts</a></h3>
       </div>
       <!-- ARROW RIGHT: hidden on smaller screens -->
-      <div class="hidden lg:block w-0 h-0 z-10 cat-o-arrow-right"></div>
+      <div class="hidden xl:block w-0 h-0 z-10 cat-o-arrow-right"></div>
     </div>
-    <div class="h-full text-sm lg:-ml-[2rem] lg:mr-[2rem] px-4 pt-4 pb-2 cat-o-body">
+    <div class="h-full text-sm xl:-ml-[2rem] xl:mr-[2rem] px-4 pt-4 pb-2 cat-o-body">
       <p class="my-4">{{ site.data.taxonomy.OperationalEmissions.description }}</p>
 
-      <div class="flex flex-col lg:flex-row gap-4 mt-6">
+      <div class="flex flex-col xl:flex-row gap-4 mt-6">
 
         <!-- DIRECT (Category O) -->
         <div class="relative px-2 py-2 border-2 border-white rounded-md">
@@ -116,22 +116,22 @@
     </div>
 
     <!-- ARROW DOWN: visible on smaller screens -->
-    <div class="w-full lg:hidden h-0 cat-o-arrow-down"></div>
+    <div class="w-full xl:hidden h-0 cat-o-arrow-down"></div>
   </div>
 
   <!-- DOWNSTREAM -->
-  <div class="flex flex-col lg:w-1/4">
+  <div class="flex flex-col xl:w-1/4">
     <div class="flex">
-      <div class="grow flex flex-col justify-center h-[4rem] lg:-ml-[2rem] px-2 py-2 cat-d">
+      <div class="grow flex flex-col justify-center h-[4rem] xl:-ml-[2rem] px-2 py-2 cat-d">
         <div class="relative">
-          <h3 class="lg:pl-[3rem] pb-0 mb-0 text-xl font-medium border-none"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/taxonomy/downstream">Downstream Impacts</a></h3>
+          <h3 class="xl:pl-[3rem] pb-0 mb-0 text-xl font-medium border-none"><a class="text-inherit hover:text-inherit hover:opacity-80" href="/taxonomy/downstream">Downstream Impacts</a></h3>
           <div class="absolute right-0 top-8">
             {% include DIST/categoryLabel.html label="CatD" dimension=dimension %}
           </div>
         </div>
       </div>
     </div>
-    <div class="h-full text-sm lg:-ml-[2rem] px-4 pt-4 pb-2 cat-d-body">
+    <div class="h-full text-sm xl:-ml-[2rem] px-4 pt-4 pb-2 cat-d-body">
       <p class="my-4">{{ site.data.taxonomy.CatD.description }}</p>
 
       <h4 class="mt-8 mb-2 text-lg font-medium">End Use (B2B, B2C)</h4>
@@ -142,7 +142,7 @@
 
 </div>
 
-<div class="flex justify-center items-center px-4 py-4 mt-2 lg:mt-0 bg-black/25 dark:bg-black/25">
+<div class="flex justify-center items-center px-4 py-4 mt-2 xl:mt-0 bg-black/25 dark:bg-black/25">
   <div>
     <h4 class="mb-2 text-lg font-medium">Out of Scope</h4>
     <div class="flex items-center gap-2">
