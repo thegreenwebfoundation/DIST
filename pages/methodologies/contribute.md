@@ -14,7 +14,7 @@ Do you own or work on a method* that helps people estimate the environmental imp
 
 In general, DIST is aimed at making it easier for organisations who want to understand and report on their digital technology environmental impacts. One of the things we frequently hear from first timers is the field of digital sustainability reporting is a minefield to navigate - it's not clear what's out there, what the scope of methods are (see DIST [taxonomy](/taxonomy)), how to standardise data and importantly what can be trusted. The DIST methodology map is seeking to make this a whole lot easier. 
 
-There's several advantages to your method being included:
+**There's several advantages to your method being included:**
 
 * Your approach will get more visibility amongst potential users.
 * We summarise key information about your method, so others can compare and constrast easily.
@@ -23,9 +23,7 @@ There's several advantages to your method being included:
 
 ### When should I submit?
 
-You can submit at any time. This is an open process for community contributions.
-
-**If you would like to be included in our first carbon methodology map, launching at our [GreenIO London 2026](https://greenio.tech/conference/22/london-2026-september) workshop, you have until Thurs 17th September 2026 to get your submission to us.** Submitting by this date will leave us with enough time to review and if necessary follow up with any questions we might have. 
+You can submit at any time. This is continually open process for community contributions.
 
 ### How do I submit my method?
 
