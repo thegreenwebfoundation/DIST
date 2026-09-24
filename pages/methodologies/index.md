@@ -14,7 +14,7 @@ A curated list of measurement methods* filterable by all categories of the DIST 
 
 ## The Methodologies Map
 
-The interactive Methodologies Map below can help 
+The interactive Methodologies Map below displays a small subset of the data captured for each method. It can be used to filter methods based on the impact dimension or category being explored, as well as a number of other criteria. 
 
 ### Usability tips
 
@@ -25,6 +25,8 @@ The interactive Methodologies Map below can help
 <iframe src="https://docs.getgrist.com/dtnqVUgecwdJ/DIST-Methodologies-Map/p/3?embed=true&themeAppearance=light" 
         height="500px" width="100%" frameborder="0">
 </iframe>
+
+<p class="button"><a href="https://docs.getgrist.com/dtnqVUgecwdJ/DIST-Methodologies-Map?utm_id=share-doc">View full Methodologies Map data</a></p>
 
 ## Roadmap
 
