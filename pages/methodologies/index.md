@@ -33,9 +33,9 @@ wide: true
 <h3>Roadmap</h3>
 
 <ul>
-<li>Impact dimension: Carbon (September 2026)</li>
-<li>Impact dimension: Water (H1 2027)</li>
-<li>Other impact dimensions: Later in 2027</li>
+<li>Impact dimension: Carbon (September - November 2026)</li>
+<li>Impact dimension: Water (Q1 2027)</li>
+<li>Other impact dimensions: Later in 2027 and 2028</li>
 </ul>
 
 <h2>Contribute</h2>
@@ -44,6 +44,6 @@ wide: true
 
 <p class="button"><a href="/methodologies/contribute">Contribute your method</a></p>
 
-<p>Alternatively, to track progress, or get involved in the shaping of the vision and implementation of this section of DIST, take a look at the <a href="https://github.com/thegreenwebfoundation/DIST/issues?q=state%3Aopen%20label%3A%22Methodologies%20map%22">issues we are working on in github</a>.</p>
+<p>To track progress, or get involved in the shaping of the vision and implementation of this section of DIST, take a look at the <a href="https://github.com/thegreenwebfoundation/DIST/issues?q=state%3Aopen%20label%3A%22Methodologies%20map%22">issues we are working on in github</a>.</p>
 
 
