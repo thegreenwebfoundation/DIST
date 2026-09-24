@@ -38,14 +38,14 @@ layout: home
     <div class="mb-6"><a href="/taxonomy" class="font-bold">Visit taxonomy overview →</a></div>
     <div class="">
         <p class="text-orange-700 font-bold uppercase">Measure with confidence</p>
-        <h2 class="mb-0 pt-3 text-2xl border-t-0">2. Methodologies</h2></div>
+        <h2 class="mb-0 pt-3 text-2xl border-t-0">2. Methodologies map</h2></div>
     <div class="">
-        <p>Curated list of available measurement and estimation methodologies across all categories of the taxonomy - find ways to fill the gaps in your numbers.</p>
+        <p>Curated list of available measurement and estimation methods across all categories of the taxonomy - find approaches to fill the gaps in your numbers.</p>
     </div>
     <div>
         <p class="mt-12 p-4 text-2xl border-t-2 border-b-2">Coming soon</p>
     </div>
-    <div class="mb-6"><a href="/methodologies" class="font-bold">Visit methodologies overview →</a></div>
+    <div class="mb-6"><a href="/methodologies" class="font-bold">Visit methodologies map overview →</a></div>
     <div class="">
         <p class="text-orange-700 font-bold uppercase">Share transparently</p>
         <h2 class="mb-0 pt-3 text-2xl border-t-0">3. Schema</h2>

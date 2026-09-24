@@ -6,16 +6,18 @@ layout: sidebar-navigation
 sidebar_navigation: methodology_categories
 ---
 
-Do you own or work on a methodology that helps people estimate the environmental impacts from their digital tech? If so, we would like to include you in the DIST methodology map.
+Do you own or work on a method* that helps people estimate the environmental impacts from their digital tech? If so, we would like to include you in the DIST methodology map.
 
-### Why should I submit my methodology?
+*\* Think of a method as a broad term covering a range of approaches such as calculation procedures, formulas, datasets, estimation tools and resources - anything that helps you produce numbers for a taxonomy category*. 
 
-In general, DIST is aimed at making it easier for organisations who want to understand and report on their digital technology environmental impacts. One of the things we frequently hear from first timers is the field of digital sustainability reporting is it's a minefield to navigate - it's not clear what's out there, what the scope of methods are (see DIST [taxonomy](/taxonomy)), how to standardise data and importantly what can be trusted. The DIST methodology map is seeking to make this a whole lot easier. 
+### Why should I submit my method?
 
-There's several advantages to your methodology being included:
+In general, DIST is aimed at making it easier for organisations who want to understand and report on their digital technology environmental impacts. One of the things we frequently hear from first timers is the field of digital sustainability reporting is a minefield to navigate - it's not clear what's out there, what the scope of methods are (see DIST [taxonomy](/taxonomy)), how to standardise data and importantly what can be trusted. The DIST methodology map is seeking to make this a whole lot easier. 
 
-* Your work will get more visibility amongst potential users.
-* We summarise key information about your methodology, so others can compare and constrast easily.
+There's several advantages to your method being included:
+
+* Your approach will get more visibility amongst potential users.
+* We summarise key information about your method, so others can compare and constrast easily.
 * We work with you to keep your information accurate, so it can be trusted.
 * It's free to be included.
 
@@ -25,15 +27,15 @@ You can submit at any time. This is an open process for community contributions.
 
 **If you would like to be included in our first carbon methodology map, launching at our [GreenIO London 2026](https://greenio.tech/conference/22/london-2026-september) workshop, you have until Thurs 17th September 2026 to get your submission to us.** Submitting by this date will leave us with enough time to review and if necessary follow up with any questions we might have. 
 
-### How do I submit my methodology?
+### How do I submit my method?
 
-We estimate submitting a methodology will take you about 15 minutes. You can submit via two routes:
+We estimate a submission will take you about 15 minutes. You can submit via two routes:
 
 <div class="grid gap-x-10 gap-y-6 sm:grid-cols-2 sm:grid-flow-col sm:auto-rows-auto mt-3 mb-16">
   <div>
     <div class=""><h4 class="text-xl mb-0 border-blue border-b-2">1. Submit via GitHub</h4></div>
     <div class="">
-      <p>Submit a methodology using the GitHub template which is prefilled with all required contribution fields.</p>
+      <p>Submit a method using the GitHub template which is prefilled with all required contribution fields.</p>
     </div>
     <div class=""><a href="https://github.com/thegreenwebfoundation/DIST/issues/new?template=submit-methodology.md">Go to GitHub.</a></div>
   </div>
@@ -46,11 +48,13 @@ We estimate submitting a methodology will take you about 15 minutes. You can sub
 
 ### Do you accept submissions on behalf of others?
 
-Sorry, but we don't. If you are working with methodologies you think should be included in the map, but aren't directly involved, the most helpful thing you can do is get in contact with the methodology owner and ask them to submit it to us themselves. We want to ensure the methodologies listed in the map are maintained over time, and our experience stewarding the [Green Web Dataset](https://www.thegreenwebfoundation.org/tools/green-web-dataset/) has taught us that in order to do that we need to be in direct contact with those owning the things we list.
+Sorry, but we don't. If you are working with methods you think should be included in the map, but aren't directly involved, the most helpful thing you can do is get in contact with the method owner and ask them to submit it to us themselves. We want to ensure what's listed in the map is maintained over time, and our experience stewarding the [Green Web Dataset](https://www.thegreenwebfoundation.org/tools/green-web-dataset/) has taught us that in order to do that we need to be in direct contact with those owning the things we list.
 
-### How do I know if my methodology is suitable?
+### How do I know if my method is suitable?
 
-For a methodology to be considered for inclusion in the DIST Methodologies Map, it must be:
+The word "*method*" is best thought of as a broad term covering a range of approaches such as calculation procedures, formulas, datasets, estimation tools and resources - anything that guides someone to produce numbers aligned to one or more [taxonomy](/taxonomy) categories. If your method is designed to do that, you're off to a good start! 
+
+Aditionally, for your method to be considered for inclusion in the DIST Methodologies Map, it must be:
 
 - Relevant to an existing [DIST impact dimension](/taxonomy#dimensions).
 - Relevant to at least one existing [DIST taxonomy sub-category](/taxonomy/categories). Multiple sub-categories across different parts of the lifecycle are accepted.
@@ -62,9 +66,9 @@ Further to these guidelines, all submissions should also meet the project's gene
 
 **Note:** If you have a suggestion about how we can improve this contribution process and guidelines, please [create an issue](https://github.com/thegreenwebfoundation/DIST/issues) in the DIST GitHub repository.
 
-### What happens after I submit my methodology?
+### What happens after I submit?
 
-The process for including a methodology in the DIST Methodologies Map is outlined below in text and visual formats.
+The process for including a method in the DIST Methodologies Map is outlined below in text and visual formats.
 
 1. A GitHub issue is created using the provided template.
 2. A DIST maintainer will review the issue to ensure that it meets the submission and contribution guidelines. You can expect this to happen within seven days of your submission, maybe sooner if we can.
