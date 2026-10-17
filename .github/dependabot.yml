@@ -12,7 +12,6 @@ updates:
     labels:
       - "dependencies"
       - "dependabot"
-    security-updates: true
 
   - package-ecosystem: "npm"
     directory: "/"
@@ -32,4 +31,3 @@ updates:
     open-pull-requests-limit: 5
     labels:
       - "dependencies"
-    security-updates: true
